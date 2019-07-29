@@ -1,0 +1,18 @@
+@import "header/header.scss";
+@import "about/about.scss";
+@import "situations/situations.scss";
+@import "blog/blog.scss";
+@import "companies/companies.scss";
+@import "footer/footer.scss";
+@import "work-features/work-features.scss";
+@import "specialists/specialists.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

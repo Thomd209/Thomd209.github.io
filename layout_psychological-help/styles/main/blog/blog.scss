@@ -1,0 +1,152 @@
+@media screen and (max-width: 768px){
+     .blog {
+         width: 100%;
+         border-top: 2px solid #e3e3e3;
+         border-right: 1px solid #000;
+     }
+
+     .blog-title-block {
+         margin-top: 89px;
+         text-align: center;
+         font-size: 27px;
+     }
+
+     .articles {
+         display: none;
+     }
+
+     .blog__posts {
+        width: 100%;
+        margin: 66px auto 103px auto;
+    }
+
+     .posts {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+
+        .posts__post {
+            flex-basis: 100%;
+        }
+
+        .post__img {
+            width: 50%;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .post-img-1 {
+            background: url('../../../../appvelox task/images/blog_woman.png') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .post-img-2 {
+            background: url('../../../../appvelox task/images/blog_man.png') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .post__title {
+            text-align: center;
+            margin-top: 43px;
+            font-size: 20px;
+        }
+
+        .post__text {
+            text-align: center;
+            margin-top: 38px;
+            font-size: 18px;
+        }
+     }
+}
+
+@media screen and (min-width: 769px){
+    .blog {
+        width: 100%;
+        border-top: 2px solid #e3e3e3;
+        position: relative;
+    }
+
+    .blog__title-block {
+        width: 98%;
+        height: 50px;
+        margin: 89px auto;
+        position: relative;
+    }
+
+    .blog-title-block {
+        text-align: right;
+        font-size: 27px;
+
+        .title {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    .blog__articles {
+        position: absolute;
+        top: 50px;
+        right: 16.7%;
+    }
+
+    .articles {
+        font-size: 23px;
+    }
+
+    .blog__posts {
+       width: 100%;
+       margin: 66px auto 103px auto;
+   }
+
+    .posts {
+       display: flex;
+       justify-content: space-between;
+       flex-flow: row nowrap;
+
+       .posts__post {
+           flex-basis: 48%;
+           
+       }
+
+       .post {
+          display: flex;
+          justify-content: space-around;
+
+       .post__img {
+           flex-basis: 48%;
+           height: 250px;
+       }
+
+       .post-img-1 {
+           background: url('../../../../appvelox task/images/blog_woman.png') no-repeat;
+           background-size: 100% 100%;
+       }
+
+       .post-img-2 {
+           background: url('../../../../appvelox task/images/blog_man.png') no-repeat;
+           background-size: 100% 100%;
+       }
+
+       .post__text-block {
+         flex-basis: 50%;
+       }
+
+       .post__title {
+           display: block;
+           flex-basis: 100%;
+           text-align: justify;
+           margin-top: 43px;
+           font-size: 20px;
+       }
+
+       .post__text {
+           display: block;
+           flex-basis: 100%;
+           text-align: justify;
+           margin-top: 38px;
+           font-size: 18px;
+       }
+     }
+   }
+} 
+
