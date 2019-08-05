@@ -2,22 +2,28 @@
      .blog {
          width: 100%;
          border-top: 2px solid #e3e3e3;
-         border-right: 1px solid #000;
      }
 
-     .blog-title-block {
-         margin-top: 89px;
+     .blog-title {
          text-align: center;
          font-size: 27px;
      }
 
-     .articles {
+     .blog__title {
+        margin: 20px auto 0px auto;
+     }
+
+     .articles-title {
          display: none;
+     }
+
+     .blog__articles-title {
+        margin-left: 5px;
      }
 
      .blog__posts {
         width: 100%;
-        margin: 66px auto 103px auto;
+        margin: 10px auto 103px auto;
     }
 
      .posts {
@@ -29,31 +35,30 @@
             flex-basis: 100%;
         }
 
-        .post__img {
+        .post__img-container {
             width: 50%;
-            height: 300px;
-            margin: 0 auto;
-        }
-
-        .post-img-1 {
-            background: url('../../../../appvelox task/images/blog_woman.png') no-repeat;
-            background-size: 100% 100%;
-        }
-
-        .post-img-2 {
-            background: url('../../../../appvelox task/images/blog_man.png') no-repeat;
-            background-size: 100% 100%;
-        }
+            margin: 30px auto;
+ 
+            .post__img-1 {
+                max-width: 100%;
+                height: auto;
+            }
+ 
+            .post__img-2 {
+                max-width: 100%;
+                height: auto;
+            }
+         }
 
         .post__title {
             text-align: center;
-            margin-top: 43px;
+            margin-top: 23px;
             font-size: 20px;
         }
 
         .post__text {
             text-align: center;
-            margin-top: 38px;
+            margin-top: 18px;
             font-size: 18px;
         }
      }
@@ -65,37 +70,71 @@
         border-top: 2px solid #e3e3e3;
         position: relative;
     }
-
-    .blog__title-block {
-        width: 98%;
-        height: 50px;
-        margin: 89px auto;
-        position: relative;
+    
+    .blog-title {
+       text-align: left;
+       font-size: 25px;
     }
 
-    .blog-title-block {
-        text-align: right;
-        font-size: 27px;
-
-        .title {
-            position: absolute;
-            left: 0;
-        }
+    .blog__title {
+       width: 10%;
+       position: absolute;
+       top: 50px;
+       left: 10.5%;
     }
 
-    .blog__articles {
+    .blog__articles-title {
         position: absolute;
         top: 50px;
-        right: 16.7%;
+        right: 5%;
     }
 
-    .articles {
-        font-size: 23px;
+    .articles-title {
+        font-size: 16px;
     }
 
     .blog__posts {
-       width: 100%;
-       margin: 66px auto 103px auto;
+       width: 80%;
+       margin: 90px auto 50px auto;
+   }
+
+   @media screen and (min-width: 1441px) {
+
+    .blog__title {
+        left: 20.5%;
+     }
+
+     .blog__articles-title {
+        right: 20%;
+    }
+
+       .blog__posts {
+           width: 60%;
+           margin: 90px auto 100px auto;
+       }
+
+       .posts {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+
+       }
+
+       .post__img-container {
+        flex-basis: 30%;
+        height: 100px;
+
+       }
+        
+        .post__img-1 {
+            max-width: 100%;
+            height: auto;
+        }
+       
+
+       .post__text-block {
+        width: 50%;
+      }
    }
 
     .posts {
@@ -105,38 +144,36 @@
 
        .posts__post {
            flex-basis: 48%;
-           
-       }
+        }
 
        .post {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
 
-       .post__img {
-           flex-basis: 48%;
-           height: 250px;
-       }
+       .post__img-container {
+           flex-basis: 50%;
+           height: 190px;
 
-       .post-img-1 {
-           background: url('../../../../appvelox task/images/blog_woman.png') no-repeat;
-           background-size: 100% 100%;
-       }
+           .post__img-1 {
+               max-width: 100%;
+               height: auto;
+           }
 
-       .post-img-2 {
-           background: url('../../../../appvelox task/images/blog_man.png') no-repeat;
-           background-size: 100% 100%;
-       }
+           .post__img-2 {
+               max-width: 100%;
+               height: auto;
+           }
+        }
 
        .post__text-block {
-         flex-basis: 50%;
+         flex-basis: 45%;
        }
 
        .post__title {
-           display: block;
            flex-basis: 100%;
            text-align: justify;
-           margin-top: 43px;
-           font-size: 20px;
+           margin-top: 10px;
+           font-size: 16px;
        }
 
        .post__text {
@@ -144,7 +181,7 @@
            flex-basis: 100%;
            text-align: justify;
            margin-top: 38px;
-           font-size: 18px;
+           font-size: 13px;
        }
      }
    }
