@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: Helios;
+  src: url("../fonts/14788.otf"); }
+body {
+  display: flex;
+  flex-flow: column wrap; }
+
+header {
+  width: 100vw;
+  height: 100px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Helios;
+  position: fixed;
+  z-index: 100000; }
+
+.header-change {
+  height: 50px;
+  transition: height 1s;
+  justify-content: flex-start; }
+
+.header__flex-element {
+  box-sizing: border-box; }
+
+.header__logo {
+  flex: 0 0 20%;
+  height: 100px; }
+  .header__logo .header__logo-img {
+    width: 100%;
+    height: auto; }
+  .header__logo .header__min-logo-img {
+    display: none; }
+  .header__logo .header__min-logo-img-change {
+    display: block;
+    height: 20px;
+    margin: 40px 0 0 85%; }
+
+.header__logo-change {
+  flex: 0 0 10%; }
+
+.header__menu {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__menu .header__menu-list {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; }
+  .header__menu li {
+    position: relative; }
+  .header__menu li > ul {
+    opacity: 0;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 20px;
+    right: -30%;
+    list-style-type: none;
+    text-align: center; }
+    .header__menu li > ul li {
+      margin-top: 10px; }
+    .header__menu li > ul a {
+      color: #000; }
+  .header__menu li:hover > ul {
+    opacity: 1; }
+  .header__menu a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase; }
+
+.header__menu-change {
+  flex: 0 0 60%; }
+
+.header__contacts {
+  flex: 0 0 15%;
+  display: flex;
+  flex-flow: column wrap; }
+
+.header__tel {
+  display: flex;
+  height: 50px; }
+  .header__tel .header__tel-icon {
+    max-width: 100%;
+    height: 50px; }
+  .header__tel .header__tel-numbers {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    box-sizing: border-box; }
+    .header__tel .header__tel-numbers .header__tel-number {
+      font-size: 0.8em;
+      display: inline-block;
+      margin-top: 5px; }
+
+.header__email {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .header__email .header__mail-icon {
+    max-width: 100%;
+    height: 50px; }
+  .header__email .header__mail-name {
+    display: inline-block;
+    margin: 10px 0 0 5%;
+    font-size: 1em; }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  footer h3 {
+    text-transform: uppercase; }
+  footer img {
+    width: 6%;
+    height: 40px; }
+
+.footer__contacts {
+  flex: 0 0 32%;
+  font-size: 1.2em; }
+  .footer__contacts h3 {
+    display: block;
+    margin: 20px 0 0 5px;
+    font-size: 1.5em; }
+  .footer__contacts .footer__contacts-position {
+    display: flex;
+    margin-top: 50px; }
+    .footer__contacts .footer__contacts-position img {
+      margin-top: 5px; }
+  .footer__contacts .footer__contacts-position-adress {
+    margin-left: 15px;
+    display: flex;
+    flex-flow: column wrap; }
+    .footer__contacts .footer__contacts-position-adress span {
+      display: block; }
+  .footer__contacts .footer__contacts-tel {
+    display: flex; }
+    .footer__contacts .footer__contacts-tel .footer__tel-numbers {
+      margin: 5px 0 0 15px;
+      display: flex;
+      flex-flow: column wrap; }
+      .footer__contacts .footer__contacts-tel .footer__tel-numbers span {
+        display: block; }
+  .footer__contacts .footer__contacts-email {
+    display: flex; }
+    .footer__contacts .footer__contacts-email span {
+      display: block;
+      margin: 15px 0 10px 15px; }
+
+.footer__inform {
+  flex: 0 0 32%; }
+  .footer__inform h3 {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5em; }
+  .footer__inform .footer__inform-text {
+    margin-top: 25px; }
+  .footer__inform span {
+    display: block;
+    font-size: 1.4em; }
+  .footer__inform .footer__inform-span-2 {
+    margin-top: 10px; }
+
+.footer__news {
+  flex: 0 0 32%; }
+  .footer__news h3 {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5em; }
+  .footer__news .footer__news-text {
+    margin-top: 50px; }
+  .footer__news span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.4em; }
+
+/*# sourceMappingURL=style.css.map */

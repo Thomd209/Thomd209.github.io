@@ -1,0 +1,112 @@
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    img {
+        width: 6%;
+        height: 40px;
+    }
+}
+
+.footer__contacts {
+    flex: 0 0 32%;
+    font-size: 1.2em;
+
+    h3 {
+        display: block;
+        margin: 20px 0 0 5px;
+        font-size: 1.5em;
+    }
+
+    .footer__contacts-position {
+        display: flex;
+        margin-top: 50px;
+
+        img {
+            margin-top: 5px;
+        }
+    }
+    
+    .footer__contacts-position-adress {
+        margin-left: 15px;
+        display: flex;
+        flex-flow: column wrap;
+        
+        span {
+            display: block;
+        }
+    }
+
+    .footer__contacts-tel {
+        display: flex;
+
+        .footer__tel-numbers {
+            margin: 5px 0 0 15px;
+            display: flex;
+            flex-flow: column wrap;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .footer__contacts-email {
+        display: flex;
+
+        span {
+            display: block;
+            margin: 15px 0 10px 15px;
+        }
+    }
+}
+
+.footer__inform {
+    flex: 0 0 32%;
+
+    h3 {
+        display: block;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .footer__inform-text {
+        margin-top: 25px;
+    }
+
+    span {
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .footer__inform-span-2 {
+        margin-top: 10px;
+    }
+
+}
+
+.footer__news {
+    flex: 0 0 32%;
+
+    h3 {
+        display: block;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .footer__news-text {
+        margin-top: 50px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.4em;
+    }
+}
