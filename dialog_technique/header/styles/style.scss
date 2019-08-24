@@ -23,13 +23,12 @@ header {
     align-items: center;
     font-family: Helios;
     position: fixed;
-    z-index: 100000;
+    z-index: 10;
 }
 
 .header-change {
     height: 50px;
     transition: height 1s;
-    justify-content: flex-start;
 }
 
 .header__flex-element {
@@ -37,8 +36,9 @@ header {
 }
 
 .header__logo {
-   flex: 0 0 20%;
-   height: 100px;
+   flex-basis: 15%;
+   height: 70px;
+   margin-right: -10%;
 
     .header__logo-img {
        width: 100%;
@@ -57,25 +57,32 @@ header {
 }
 
 .header__logo-change {
-    flex: 0 0 10%;
+    flex-basis: 10%;
+    margin-right: -10%;
+    transform: translate(-100px,10px);
+    transition-property: flex-basis, transform;
+    transition-duration: 1s;
 }
 
 .header__menu {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
+    margin-right: -10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
+    
 
     .header__menu-list {
         width: 100%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         list-style-type: none;
     }
 
-    li {
+    .li {
         position: relative;
     }
 
@@ -83,13 +90,16 @@ header {
         opacity: 0;
         flex-flow: column wrap;
         position: absolute;
-        top: 20px;
-        right: -30%;
+        margin-left: -2%;
         list-style-type: none;
         text-align: center;
+        background: #ffffff;
+        z-index: 100;
     
         li {
             margin-top: 10px;
+            padding-bottom: 3%;
+            border-bottom: 1px solid #000;
         }
     
         a {
@@ -109,11 +119,14 @@ header {
 }
 
 .header__menu-change {
-    flex: 0 0 60%;
+    flex: 0 0 55%;
+    transform: translate(-280px,0px);
+    transition: transform 1s;
 }
 
 .header__contacts {
     flex: 0 0 15%;
+    margin-right: -5%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -134,7 +147,7 @@ header {
         box-sizing: border-box;
 
         .header__tel-number {
-            font-size: 0.8em;
+            font-size: 1em;
             display: inline-block;
             margin-top: 5px;
         }

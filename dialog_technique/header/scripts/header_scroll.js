@@ -11,8 +11,8 @@ window.addEventListener('scroll', function(){
         menu.classList.add('header__menu-change');
         header.classList.add('header-change');
         header_logo.classList.add('header__logo-change');
-        logo.style.display = "none";
-        min_logo.classList.add('header__min-logo-img-change');
+        /*logo.style.display = "none";
+        min_logo.classList.add('header__min-logo-img-change');*/
     }
     else if(window.pageYOffset < 100) {
         contacts.style.display = 'flex';
