@@ -21,6 +21,7 @@ header {
     position: fixed;
     font-family: Helios;
     z-index: 10;
+    font-size: 0.9em;
 }
 
 .header__logo {
@@ -43,7 +44,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9em;
     
 
     .header__menu-list {
@@ -92,14 +92,15 @@ header {
 }
 
 .header__contacts {
-    width: 16%;
+    width: 15%;
     position: absolute;
     top: 25px;
     right: 2%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 
-    .header__tel {
+    .header__tel-img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -116,11 +117,10 @@ header {
         display: flex;
         align-items: center;
         flex-flow: column wrap;
+        margin: 5px 0 0 0;
 
         .header__tel-number {
             font-size: 1em;
-            display: inline-block;
-            margin-top: 5px;
         }
     }
 }
