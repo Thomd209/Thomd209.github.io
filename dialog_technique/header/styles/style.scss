@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Helios;
-    src: url('../fonts/14788.otf');
+    src: url('../../fonts/14788.otf');
 }
 
 body {
@@ -15,62 +15,35 @@ body {
 
 
 header {
-    width: 100vw;
-    height: 100px;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Helios;
+    width: 100%;
+    height: 120px;
+    background: #fff;
     position: fixed;
+    font-family: Helios;
     z-index: 10;
 }
 
-.header-change {
-    height: 50px;
-    transition: height 1s;
-}
-
-.header__flex-element {
-    box-sizing: border-box;
-}
-
 .header__logo {
-   flex-basis: 15%;
-   height: 70px;
-   margin-right: -10%;
+   width: 20%;
+   position: absolute;
+   left: 2.5%;
 
     .header__logo-img {
+       display: block;
        width: 100%;
        height: auto;
    }
-
-    .header__min-logo-img {
-        display: none;
-    }
-
-    .header__min-logo-img-change {
-        display: block;
-        height: 20px;
-        margin: 40px 0 0 85%;
-    }
-}
-
-.header__logo-change {
-    flex-basis: 10%;
-    margin-right: -10%;
-    transform: translate(-100px,10px);
-    transition-property: flex-basis, transform;
-    transition-duration: 1s;
 }
 
 .header__menu {
-    flex: 0 0 50%;
-    margin-right: -10%;
+    width: 50%;
+    position: absolute;
+    top: 45px;
+    left: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.9em;
     
 
     .header__menu-list {
@@ -90,7 +63,7 @@ header {
         opacity: 0;
         flex-flow: column wrap;
         position: absolute;
-        margin-left: -2%;
+        margin-left: -4%;
         list-style-type: none;
         text-align: center;
         background: #ffffff;
@@ -118,33 +91,31 @@ header {
     }
 }
 
-.header__menu-change {
-    flex: 0 0 55%;
-    transform: translate(-280px,0px);
-    transition: transform 1s;
-}
-
 .header__contacts {
-    flex: 0 0 15%;
-    margin-right: -5%;
+    width: 16%;
+    position: absolute;
+    top: 25px;
+    right: 2%;
     display: flex;
-    flex-flow: column wrap;
-}
+    justify-content: space-around;
 
-.header__tel {
-    display: flex;
-    height: 50px;
+    .header__tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
 
-    .header__tel-icon {
-       max-width: 100%;
-       height: 50px;
+        .header__tel-icon {
+            max-width: 100%;
+            height: 50px;
+        }
+    
     }
     
     .header__tel-numbers {
         display: flex;
         align-items: center;
         flex-flow: column wrap;
-        box-sizing: border-box;
 
         .header__tel-number {
             font-size: 1em;
@@ -154,22 +125,3 @@ header {
     }
 }
 
-.header__email {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .header__mail-icon {
-       max-width: 100%;
-       height: 50px;
-    }
-
-    .header__mail-name {
-        display: inline-block;
-        margin: 10px 0 0 5%;
-        font-size: 1em;
-    }
-    
-}

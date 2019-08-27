@@ -4,22 +4,21 @@
 
 @font-face {
   font-family: Helios;
-  src: url("../fonts/14788.otf"); }
+  src: url("../../fonts/14788.otf"); }
 body {
   display: flex;
   flex-flow: column wrap; }
 
 header {
-  width: 100vw;
-  height: 100px;
+  width: 100%;
+  height: 120px;
   background: #fff;
-  font-family: Helios;
   position: fixed;
+  font-family: Helios;
   z-index: 10; }
 
 .header__logo {
   width: 20%;
-  height: 10px;
   position: absolute;
   left: 2.5%; }
   .header__logo .header__logo-img {
@@ -49,7 +48,7 @@ header {
     opacity: 0;
     flex-flow: column wrap;
     position: absolute;
-    margin-left: -23%;
+    margin-left: -4%;
     list-style-type: none;
     text-align: center;
     background: #ffffff;

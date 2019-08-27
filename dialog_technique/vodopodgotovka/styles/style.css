@@ -4,22 +4,21 @@
 
 @font-face {
   font-family: Helios;
-  src: url("../fonts/14788.otf"); }
+  src: url("../../fonts/14788.otf"); }
 body {
   display: flex;
   flex-flow: column wrap; }
 
 header {
-  width: 100vw;
-  height: 100px;
+  width: 100%;
+  height: 120px;
   background: #fff;
-  font-family: Helios;
   position: fixed;
+  font-family: Helios;
   z-index: 10; }
 
 .header__logo {
   width: 20%;
-  height: 10px;
   position: absolute;
   left: 2.5%; }
   .header__logo .header__logo-img {
@@ -49,7 +48,7 @@ header {
     opacity: 0;
     flex-flow: column wrap;
     position: absolute;
-    margin-left: -23%;
+    margin-left: -4%;
     list-style-type: none;
     text-align: center;
     background: #ffffff;
@@ -91,33 +90,25 @@ header {
       display: inline-block;
       margin-top: 5px; }
 
-@font-face {
-  font-family: Helios;
-  src: url("../../fonts/14788.otf"); }
+.vodopodgotovka__wrapper {
+  width: 100%;
+  margin-top: 120px;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Helios; }
+
 .site-path {
   width: 30%;
   position: relative;
-  top: 150px;
+  top: 155px;
   left: 2.5%;
-  z-index: 1000;
+  z-index: 1;
   font-size: 1.3em;
-  text-transform: uppercase;
-  z-index: -1;
-  font-family: Helios; }
-
-.vodopodgotovka__wrapper {
-  width: 100%;
-  margin-top: 160px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  font-family: Helios; }
+  text-transform: uppercase; }
 
 aside {
-  flex-basis: 30%;
-  position: sticky;
-  top: 5em;
-  align-self: flex-start; }
+  flex: 0 0 30%;
+  margin: 50px 0 30px 0; }
   aside ul {
     margin: 30px 0 0 30px;
     font-size: 1.1em;
@@ -125,17 +116,15 @@ aside {
     list-style-type: none; }
 
 main {
-  flex-basis: 70%;
+  flex: 0 0 70%;
   font-size: 1.1em;
   margin: 50px 0 30px 0; }
   main .main__offer {
-    margin: -20px 0 0 30px; }
+    margin: 30px 0 0 30px; }
   main .main__description {
-    margin: 0px 0 0 30px; }
+    margin: 30px 0 0 30px; }
   main span {
     display: block; }
-  main p {
-    margin: 30px; }
 
 footer {
   width: 100%;
