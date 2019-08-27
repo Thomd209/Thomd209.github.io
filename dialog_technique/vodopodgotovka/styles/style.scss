@@ -8,7 +8,7 @@
 .site-path {
     width: 30%;
     position: relative;
-    top: 120px;
+    top: 150px;
     left: 2.5%;
     z-index: 1000;
     font-size: 1.3em;
@@ -19,7 +19,7 @@
 
 .vodopodgotovka__wrapper {
     width: 100%;
-    margin-top: 130px;
+    margin-top: 160px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -46,11 +46,11 @@ main {
     margin: 50px 0 30px 0;
 
     .main__offer {
-        margin: 30px 0 0 30px;
+        margin: -20px 0 0 30px;
     }
 
     .main__description {
-        margin: 30px 0 0 30px;
+        margin: 0px 0 0 30px;
     }
 
     span {
