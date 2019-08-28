@@ -9,7 +9,7 @@ $(window).scroll(function(){
         $('.header__contacts').css("display", "none");
     }
     else {
-        $('header').css("height", "120px");
+        $('header').css("height", "100px");
         $('header').css("transition", "height 1s");
         $('.header__logo').css("width", "20%");
         $('.header__logo').css("transition", "width 1s");
