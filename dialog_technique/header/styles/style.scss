@@ -16,13 +16,15 @@ header {
     position: fixed;
     font-family: Helios, sans-serif;
     z-index: 10;
-    padding-bottom: 8%;
+    padding-bottom: 10%;
+    font-size: 1.2vw;
 }
 
 
 .header__logo {
    width: 20%;
    height: auto;
+   padding: 1% 0 1% 0;
    position: absolute;
    left: 2.5%;
 }
@@ -35,7 +37,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1vw;
 
     .header__menu-list {
         width: 100%;
@@ -84,10 +85,10 @@ header {
 
 
 .header__tel-img {
-    width: 3%;
+    width: 2.5%;
     height: auto;
     position: absolute;
-    top: 27%;
+    top: 35%;
     left: 85%;
 }
 
@@ -95,47 +96,13 @@ header {
     position: absolute;
     top: 28%;
     left: 89%;
-    font-size: 1vw;
 }
 
 .header__tel-number-bottom {
     position: absolute;
     top: 47%;
     left: 89%;
-    font-size: 1vw;
 }
 
-/*@media screen and (min-width:1124px){
-    .header__tel-number-top {
-        position: absolute;
-        top: 28%;
-        left: 89%;
-        font-size: 0.9em;
-    }
-
-    .header__tel-number-bottom {
-        position: absolute;
-        top: 47%;
-        left: 89%;
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width:1123px){
-
-    .header__tel-number-top {
-        position: absolute;
-        top: 28%;
-        left: 89%;
-        font-size: 0.8em;
-    }
-    .header__tel-number-bottom {
-        position: absolute;
-        top: 47%;
-        left: 89%;
-        font-size: 0.8em;
-
-    }
-}*/
 
 

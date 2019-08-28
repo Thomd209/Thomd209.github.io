@@ -7,6 +7,7 @@ footer {
     h3 {
         font-size: 1.5em;
         text-transform: uppercase;
+        font-weight: bold;
     }
 
     span {
@@ -33,7 +34,7 @@ footer {
         margin-top: 50px;
 
         img {
-            height: 50px;
+            width: 2%;
         }
     }
     
@@ -50,10 +51,15 @@ footer {
     .footer__contacts-tel {
         display: flex;
 
+        img {
+            width: 2.5%;
+        }
+
         .footer__tel-numbers {
             margin: 5px 0 0 15px;
             display: flex;
             flex-flow: column wrap;
+
 
             span {
                 display: block;
@@ -64,6 +70,10 @@ footer {
     .footer__contacts-email {
         display: flex;
         margin: 10px 0 10px 0;
+
+        img {
+            width: 2.5%;
+        }
 
         span {
             display: block;
@@ -81,7 +91,7 @@ footer {
     }
 
     .footer__inform-text {
-        margin-top: 25px;
+        margin-top: 50px;
     }
 
     span {
