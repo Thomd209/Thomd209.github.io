@@ -5,36 +5,30 @@
 @font-face {
   font-family: Helios;
   src: url("../../fonts/14788.otf"); }
-body {
-  display: flex;
-  flex-flow: column wrap; }
-
 header {
   width: 100%;
-  height: 100px;
+  height: 0;
   background: #fff;
   position: fixed;
   font-family: Helios, sans-serif;
   z-index: 10;
-  font-size: 0.9em; }
+  padding-bottom: 8%; }
 
 .header__logo {
   width: 20%;
+  height: auto;
   position: absolute;
   left: 2.5%; }
-  .header__logo .header__logo-img {
-    display: block;
-    width: 100%;
-    height: auto; }
 
 .header__menu {
   width: 50%;
   position: absolute;
-  top: 45px;
+  top: 40%;
   left: 25%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 1vw; }
   .header__menu .header__menu-list {
     width: 100%;
     margin: 0 auto;
@@ -66,33 +60,62 @@ header {
     color: #000;
     text-transform: uppercase; }
 
-.header__contacts {
-  width: 15%;
+.header__tel-img {
+  width: 3%;
+  height: auto;
   position: absolute;
-  top: 25px;
-  right: 2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .header__contacts .header__tel-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; }
-    .header__contacts .header__tel-img .header__tel-icon {
-      max-width: 100%;
-      height: 50px; }
-  .header__contacts .header__tel-numbers {
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-    margin: 5px 0 0 0; }
+  top: 27%;
+  left: 85%; }
 
+.header__tel-number-top {
+  position: absolute;
+  top: 28%;
+  left: 89%;
+  font-size: 1vw; }
+
+.header__tel-number-bottom {
+  position: absolute;
+  top: 47%;
+  left: 89%;
+  font-size: 1vw; }
+
+/*@media screen and (min-width:1124px){
+    .header__tel-number-top {
+        position: absolute;
+        top: 28%;
+        left: 89%;
+        font-size: 0.9em;
+    }
+
+    .header__tel-number-bottom {
+        position: absolute;
+        top: 47%;
+        left: 89%;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:1123px){
+
+    .header__tel-number-top {
+        position: absolute;
+        top: 28%;
+        left: 89%;
+        font-size: 0.8em;
+    }
+    .header__tel-number-bottom {
+        position: absolute;
+        top: 47%;
+        left: 89%;
+        font-size: 0.8em;
+
+    }
+}*/
 footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: Helios; }
+  font-family: Helios, sans-serif; }
   footer h3 {
     font-size: 1.5em;
     text-transform: uppercase; }
