@@ -80,54 +80,51 @@ header {
 
 footer {
   width: 100%;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   font-family: Helios, sans-serif; }
   footer h3 {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     text-transform: uppercase;
     font-weight: bold; }
   footer span {
-    font-size: 1.2em; }
-  footer img {
-    width: 10%;
-    height: 50px;
-    margin-left: 7%; }
+    font-size: 1.3vw; }
 
 .footer__contacts {
   flex: 0 0 32%; }
   .footer__contacts h3 {
     display: block;
-    margin: 20px 0 0 7%; }
-  .footer__contacts .footer__contacts-position {
+    position: absolute;
+    margin: 20px 0 0 2.5%; }
+  .footer__contacts img {
+    width: 2.5vw;
+    height: 50px;
+    margin-left: 2.5%; }
+  .footer__contacts .footer__position {
     display: flex;
-    margin-top: 50px; }
-    .footer__contacts .footer__contacts-position img {
-      width: 2%; }
+    margin: 80px 0 0 5%; }
   .footer__contacts .footer__contacts-position-adress {
-    margin-left: 15px;
     display: flex;
-    flex-flow: column wrap; }
+    flex-flow: column wrap;
+    margin-left: 10px; }
     .footer__contacts .footer__contacts-position-adress span {
       display: block; }
-  .footer__contacts .footer__contacts-tel {
-    display: flex; }
-    .footer__contacts .footer__contacts-tel img {
-      width: 2.5%; }
-    .footer__contacts .footer__contacts-tel .footer__tel-numbers {
-      margin: 5px 0 0 15px;
-      display: flex;
-      flex-flow: column wrap; }
-      .footer__contacts .footer__contacts-tel .footer__tel-numbers span {
-        display: block; }
-  .footer__contacts .footer__contacts-email {
+  .footer__contacts .footer__tel {
     display: flex;
-    margin: 10px 0 10px 0; }
-    .footer__contacts .footer__contacts-email img {
-      width: 2.5%; }
-    .footer__contacts .footer__contacts-email span {
-      display: block;
-      margin: 15px 0 10px 15px; }
+    margin: 10px 0 0 5%; }
+  .footer__contacts .footer__tel-numbers {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px 0 0 10px; }
+    .footer__contacts .footer__tel-numbers span {
+      display: block; }
+  .footer__contacts .footer__email {
+    display: flex;
+    align-items: center;
+    margin: 10px 5%; }
+  .footer__contacts .footer__email-text {
+    margin: 10px 0 0 10px; }
 
 .footer__inform {
   flex: 0 0 32%; }
@@ -135,7 +132,7 @@ footer {
     display: block;
     margin-top: 20px; }
   .footer__inform .footer__inform-text {
-    margin-top: 50px; }
+    margin-top: 30px; }
   .footer__inform span {
     display: block; }
   .footer__inform .footer__inform-span-2 {
@@ -147,9 +144,6 @@ footer {
     display: block;
     margin-top: 20px; }
   .footer__news .footer__news-text {
-    margin-top: 50px; }
-  .footer__news span {
-    display: block;
-    margin-bottom: 15px; }
+    margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

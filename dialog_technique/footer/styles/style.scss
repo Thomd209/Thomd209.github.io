@@ -1,24 +1,21 @@
 footer {
     width: 100%;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     font-family: Helios, sans-serif;
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.5vw;
         text-transform: uppercase;
         font-weight: bold;
     }
 
     span {
-        font-size: 1.2em;
+        font-size: 1.3vw;
     }
 
-    img {
-        width: 10%;
-        height: 50px;
-        margin-left: 7%;
-    }
+    
 }
 
 .footer__contacts {
@@ -26,59 +23,53 @@ footer {
 
     h3 {
         display: block;
-        margin: 20px 0 0 7%;
+        position: absolute;
+        margin: 20px 0 0 2.5%;
     }
 
-    .footer__contacts-position {
-        display: flex;
-        margin-top: 50px;
+    img {
+        width: 2.5vw;
+        height: 50px;
+        margin-left: 2.5%;
+    }
 
-        img {
-            width: 2%;
-        }
+    .footer__position {
+        display: flex;
+        margin: 80px 0 0 5%;
     }
     
     .footer__contacts-position-adress {
-        margin-left: 15px;
         display: flex;
         flex-flow: column wrap;
+        margin-left: 10px;
         
         span {
             display: block;
         }
     }
 
-    .footer__contacts-tel {
+    .footer__tel {
         display: flex;
-
-        img {
-            width: 2.5%;
-        }
-
-        .footer__tel-numbers {
-            margin: 5px 0 0 15px;
-            display: flex;
-            flex-flow: column wrap;
-
-
-            span {
-                display: block;
-            }
-        }
+        margin: 10px 0 0 5%;
     }
-
-    .footer__contacts-email {
+    .footer__tel-numbers {
         display: flex;
-        margin: 10px 0 10px 0;
-
-        img {
-            width: 2.5%;
-        }
+        flex-flow: column wrap;
+        margin: 10px 0 0 10px;
 
         span {
             display: block;
-            margin: 15px 0 10px 15px;
         }
+    }
+
+    .footer__email {
+        display: flex;
+        align-items: center;
+        margin: 10px 5%;
+    }
+
+    .footer__email-text {
+        margin: 10px 0 0 10px;
     }
 }
 
@@ -91,7 +82,7 @@ footer {
     }
 
     .footer__inform-text {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     span {
@@ -113,11 +104,7 @@ footer {
     }
 
     .footer__news-text {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
-    span {
-        display: block;
-        margin-bottom: 15px;
-    }
 }
