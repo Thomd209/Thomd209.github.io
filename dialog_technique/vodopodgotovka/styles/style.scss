@@ -8,16 +8,17 @@ body {
     margin-top: 120px;
     box-sizing: border-box;
     display: flex;
-    font-family: Helios, sans-serif;
+    font-size: 1.2vw;
+    font-family: 'helios cond', sans-serif;
 }
 
 .site-path {
-    width: 30%;
+    width: 40%;
     position: relative;
     top: 155px;
     left: 2.5%;
     z-index: 1;
-    font-size: 1.3em;
+    font-size: 1.2vw;
     text-transform: uppercase;
     font-family: Helios, sans-serif;
 }

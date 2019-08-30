@@ -1,9 +1,9 @@
 footer {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
-    font-family: Helios, sans-serif;
+    font-family: 'helios cond', sans-serif;
 
     h3 {
         font-size: 1.5vw;
@@ -24,11 +24,11 @@ footer {
     h3 {
         display: block;
         position: absolute;
-        margin: 20px 0 0 2.5%;
+        margin: 30px 0 0 2.5%;
     }
 
     img {
-        width: 2.5vw;
+        width: 3vw;
         height: 50px;
         margin-left: 2.5%;
     }
@@ -55,7 +55,7 @@ footer {
     .footer__tel-numbers {
         display: flex;
         flex-flow: column wrap;
-        margin: 10px 0 0 10px;
+        margin: 5px 0 0 10px;
 
         span {
             display: block;
@@ -69,7 +69,7 @@ footer {
     }
 
     .footer__email-text {
-        margin: 10px 0 0 10px;
+        margin: 15px 0 0 10px;
     }
 }
 
@@ -78,7 +78,7 @@ footer {
 
     h3 {
         display: block;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .footer__inform-text {
@@ -100,7 +100,7 @@ footer {
 
     h3 {
         display: block;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .footer__news-text {
