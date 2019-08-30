@@ -16,7 +16,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: Helios;
   position: fixed;
   z-index: 10; }
 

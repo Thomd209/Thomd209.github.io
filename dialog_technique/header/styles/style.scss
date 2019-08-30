@@ -1,12 +1,12 @@
-@font-face {
+/*@font-face {
 	font-family: 'helios cond';
-	src: url('../../fonts/helios_cond.eot'); /* IE 9 Compatibility Mode */
-	src: url('../../fonts/helios_cond.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../../fonts/helios_cond.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../../fonts/helios_cond.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../../fonts/helios_cond.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../../fonts/helios_cond.svg#helios_cond') format('svg'); /* Chrome < 4, Legacy iOS */
-}
+	src: url('../../fonts/helios_cond.eot'); /* IE 9 Compatibility Mode 
+	src: url('../../fonts/helios_cond.eot?#iefix') format('embedded-opentype'), /* IE < 9 
+		url('../../fonts/helios_cond.woff2') format('woff2'), /* Super Modern Browsers 
+		url('../../fonts/helios_cond.woff') format('woff'), /* Firefox >= 3.6, any other modern browser 
+		url('../../fonts/helios_cond.ttf') format('truetype'), /* Safari, Android, iOS 
+		url('../../fonts/helios_cond.svg#helios_cond') format('svg'); /* Chrome < 4, Legacy iOS 
+}*/
 
 
 * {
@@ -22,7 +22,7 @@ header {
     position: fixed;
     z-index: 10;
     padding-bottom: 10%;
-    font-family: 'helios cond', sans-serif;
+    font-family: Helios, sans-serif;
 }
 
 
