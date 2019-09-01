@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="common-styles/style.css">
-   
+    <link rel="stylesheet" href="common-styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -45,8 +45,58 @@
         <span class="header__tel-number-top header__contacts">+7 (812) 719-68-68</span>
         <span class="header__tel-number-bottom header__contacts">+7 (812) 719-73-73</span>
     </header>
-    <main style="width: 100%; height: 1000px; margin-top: 0px; background: gray;">
-
+    <main style="width: 100%; height: 1000px; margin-top: 0; position: relative;">
+        <div class="slider" style="position:absolute; top: 350px;width: 100%;">
+            <div class="slider__container-1">
+                <div class="slider__text-1">
+                    <span class="slider__text-1__span-blue">durable.</span>
+                    <span class="slider__text-1__span-blue">robust.</span>
+                    <span class="slider__text-1__span-blue">built to last.</span>
+                    <span class="slider__text-1__span-4">For 100 years, Baudouin has designed and manufactured the highest quality engines for marine and power generation applications.</span>
+                    <div class="slider__text-1__btn">
+                            <span>Find a Baudouin partner</span> 
+                    </div>
+                </div>
+                <img class="slider__img-1" src="img/engine-1.jpg" alt="">
+            </div>
+            <div class="slider__container-2">
+                <span class="slider__container-2__title">The PowerKit Range</span>
+                <img class="slider__img-2" src="img/engine-2.jpg" alt="">
+                <div class="slider__text-2">
+                    <span class="slider__text-2__description">One of most extensive ranges of engines for power generation  available today.</span>
+                    <div class="slider__text-2__btn">
+                        <span>View the PowerKit Range</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__container-3">
+                <img class="slider__img-3" src="img/engine-3.jpg" alt="">
+                <div class="slider__text-3">
+                    <span class="slider__text-3__blue">m33.2 propulsion</span>
+                    <span class="slider__text-3__blue">best in class</span>
+                    <span class="slider__text-3__cyan">fuel consumption</span>
+                    <span class="slider__text-3__blue">best in class</span>
+                    <span class="slider__text-3__cyan">low speed torque</span>
+                    <span class="slider__text-3__grey">Meet the engine that is taking the workboat industry by storm</span>
+                    <div class="slider__text-3__btn">
+                        <span>Meet The M33.2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__container-4">
+                <img src="img/history.jpg" alt="">
+                <div class="slider__background-transperent"></div>
+                <div class="slider__text-4">
+                    <span class="slider-text-4__since-1918">since 1918</span>
+                    <span class="slider-text-4__description">In 1918, it started with a family and a shipyard in Marseille.</span>
+                    <span class="slider-text-4__description">The Boundouin's grew the business through relationships,</span>
+                    <span class="slider-text-4__description">commitment and determination.</span>
+                    <div class="slider-text-4__history-link">
+                        <span class="history-link">our history</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <article class="footer__contacts">
@@ -88,6 +138,13 @@
         </article>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="header/scripts/header_scroll.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+          });
+        });
+      </script>
 </body>
 </html>
