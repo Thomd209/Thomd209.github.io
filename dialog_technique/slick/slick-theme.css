@@ -15,6 +15,7 @@
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
+
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -25,7 +26,6 @@
     position: absolute;
     top: 40%;
     display: block;
-    background: #000;
     width: 20px;
     height: 20px;
     padding: 20px;
@@ -69,18 +69,17 @@
     line-height: 1;
     opacity: .75;
     color: #000;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev
 {
-    left: 25px;
+    left: 15px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 15px;
     left: auto;
 }
 .slick-prev:before
@@ -103,7 +102,7 @@
 }
 .slick-next:before
 {
-    content: "\203A";
+    content: '\203A';
 }
 [dir='rtl'] .slick-next:before
 {
