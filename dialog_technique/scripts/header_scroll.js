@@ -8,6 +8,8 @@ $(window).scroll(function(){
         $('.header__menu').css("transition", "top .5s");
         $('.header__tel-number-bottom').css("top","60%");
         $('.header__tel-number-bottom').css("transition","top 1s");
+        $('.site-path').css("top","4.9em");
+        $('.site-path').css("transition","top .5s");
     }
     else {
         $('header').css("padding-bottom","10%");
@@ -18,5 +20,7 @@ $(window).scroll(function(){
         $('.header__menu').css("transition", "top 1s");
         $('.header__tel-number-bottom').css("top","47%");
         $('.header__tel-number-bottom').css("transition","top 1s");
+        $('.site-path').css("top","8em");
+        $('.site-path').css("transition","top 1s");
     }
 });

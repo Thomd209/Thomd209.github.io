@@ -95,12 +95,12 @@
     font-size: 1.2vw;
    }
   
-  .site-path {
-    width: 100%;
+   .site-path {
+    width: 96.5%;
     padding: 1% 1% 1% 0;
     background: #D3D3D3;
-    position: relative;
-    top: 10em;
+    position: sticky;
+    top: 8em;
     left: 2.5vw;
     z-index: 1;
     font-size: 1.2vw;
@@ -172,13 +172,22 @@
       }
 
       .main__img-container {
+        width: 100%;
         margin-top: 10%;
-        display: flex;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
       }
 
-      .main__img-container img {
-        width: 40%;
+      .main__img-container :first-child {
+          width: 100%;
+          display: block;
       }
+
+      .main__img-container :last-child {
+        width: 70%;
+        display: block;
+    }
   
         footer {
           width: 100%;

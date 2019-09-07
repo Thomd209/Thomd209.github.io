@@ -95,12 +95,12 @@
     font-size: 1.2vw;
    }
   
-  .site-path {
-    width: 100%;
+   .site-path {
+    width: 96.5%;
     padding: 1% 1% 1% 0;
     background: #D3D3D3;
-    position: relative;
-    top: 10em;
+    position: sticky;
+    top: 8em;
     left: 2.5vw;
     z-index: 1;
     font-size: 1.2vw;
@@ -171,16 +171,43 @@
     }
 
     .main__container img {
-        width: 30%;
+      width: 40%;
+      display: block;
     }
 
-    .main__table {
+    .main__mechanical-perfomance .main__table {
+      margin-top: 6%;
+    }
+
+    .main__mechanical-perfomance img {
+      width: 30%;
+    }
+
+    .main__mini-perfomance .main__table {
+      margin-top: 2%;
+    }
+
+    .main__mini-perfomance img {
+      width: 30%;
+    }
+
+    .main__big-perfomance .main__table {
+      margin-top: 1.5%;
+    }
+
+    .main__big-perfomance img {
+      width: 30%;
+    }
+
+    .main__additional-performance img {
+      width: 40%;
+      margin-top: 1.5%;
     }
 
     .main__table td {
         padding: 0.5em;
         font-size: 1.2vw;
-        text-align: center;
+        text-align: left;
     }
   
         footer {

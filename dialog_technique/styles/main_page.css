@@ -11,7 +11,9 @@ header {
   background: #fff;
   position: fixed;
   z-index: 10;
-  padding-bottom: 10%; }
+  padding-bottom: 10%;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
+}
 
 .header__logo {
   width: 20%;
@@ -19,9 +21,6 @@ header {
   padding: 1% 0 1% 0;
   position: absolute;
   left: 2.5%; }
-
-  .header__menu {
-  }
 
 .header__menu .header__menu-list {
   width: 40%;
