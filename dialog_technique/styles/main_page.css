@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   list-style-type: none; }
 .header__menu li > ul {
-  opacity: 0;
+  display: none;
   flex-flow: column wrap;
   position: absolute;
   margin-left: -1%;
@@ -46,8 +46,8 @@ header {
     border-bottom: 1px solid #000; }
   .header__menu li > ul a {
     color: #000; }
-.header__menu li:hover > ul {
-  opacity: 1; }
+/*.header__menu li:hover > ul {
+  opacity: 0; }*/
 .header__menu a {
   display: block;
   font-size: 1.2vw;
