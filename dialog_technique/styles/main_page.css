@@ -228,6 +228,7 @@ header {
   .news__left-block__title {
     margin-top: 3%;
     font-size: 2vw;
+    font-weight: bold;
   }
 
   .news__left-block__text {
@@ -240,13 +241,13 @@ header {
     margin: 2.5% 0 0 5%;
     display: flex;
     justify-content: space-between;
-    flex-flow: row;
+    flex-flow: row wrap;
   }
 
   .news__right-block {
-    flex-basis: 24%;
+    flex-basis: 48%;
     padding: 3% 1% 3% 1%;
-    height: 35%;
+    height: 51%;
     box-sizing: border-box;
   }
 
@@ -264,11 +265,11 @@ header {
 
   .news-right-block__title {
     font-weight: bold;
-    font-size: 0.9vw;
+    font-size: 1.5vw;
   }
 
   .news-right-block__date {
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
 
   .news__right-block img {
