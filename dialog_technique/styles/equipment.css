@@ -31,23 +31,6 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none; }
-  .header__menu li > ul {
-    display: none;
-    flex-flow: column wrap;
-    position: absolute;
-    margin-left: -1%;
-    list-style-type: none;
-    text-align: center;
-    background: #ffffff;
-    z-index: 100; }
-    .header__menu li > ul li {
-      margin-top: 10px;
-      padding-bottom: 3%;
-      border-bottom: 1px solid #000; }
-    .header__menu li > ul a {
-      color: #000; }
-  /*.header__menu li:hover > ul {
-    opacity: 0; }*/
   .header__menu a {
     display: block;
     font-size: 1.2vw;

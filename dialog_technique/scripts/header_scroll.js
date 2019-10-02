@@ -13,14 +13,14 @@ $(window).scroll(function(){
     }
     else {
         $('header').css("padding-bottom","10%");
-        $('header').css("transition","padding-bottom 1s");
+        $('header').css("transition","padding-bottom .5s");
         $('.header__logo').css("width", "20%");
-        $('.header__logo').css("transition", "width 1s");
+        $('.header__logo').css("transition", "width .5s");
         $('.header__menu').css("top", "40%");
         $('.header__menu').css("transition", "top 1s");
         $('.header__tel-number-bottom').css("top","47%");
         $('.header__tel-number-bottom').css("transition","top 1s");
         $('.site-path').css("top","8em");
-        $('.site-path').css("transition","top 1s");
+        $('.site-path').css("transition","top .5s");
     }
 });
