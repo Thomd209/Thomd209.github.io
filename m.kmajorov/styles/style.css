@@ -29,7 +29,7 @@ body {
   background: #fff; }
   .mobile-menu__panel .mobile-menu__burger-icon {
     display: block;
-    padding: 3% 0 3% 10%; }
+    padding: 3% 0 3% 5%; }
 
 .mobile-menu__navigation {
   width: 100%;
@@ -230,6 +230,8 @@ header {
     order: 1;
     margin: 0; }
     .aside h3 {
+      display: block;
+      margin-left: 4%;
       font-size: 4vw; }
 
   .aside__img-container {
