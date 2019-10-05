@@ -15,8 +15,64 @@ body {
     margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+    .site-wrapper {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.mobile-menu {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu__panel {
+    width: 100%;
+    background: #fff;
+
+    .mobile-menu__burger-icon {
+        display: block;
+        padding: 3% 0 3% 10%;
+    }
+}
+
+.mobile-menu__navigation {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(249,249,249);
+    position: absolute;
+    right: 100%;
+}
+
+.change_mobile-menu__navigation {
+    transform: translateX(100%);
+}
+
+.mobile-menu__navigation-list {
+    margin: 10% 10%;
+    list-style-type: none;
+
+    a {
+        display: block;
+        margin-top: 6%;
+        font-size: 6vw;
+        color: #e49c9f;
+        text-decoration: none;
+    }
+}
+
 header {
     width: 100%;
+    height: 600px;
     margin: auto;
     position: relative;
     display: flex;
@@ -33,6 +89,12 @@ header {
         top: 30%;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    @media screen and (max-width: 768px) {
+        .wrapper__header-logo {
+            width: 90%;
+        }
     }
 
     .header-logo {
@@ -64,10 +126,19 @@ header {
                 transition: color .5s;
             }
         }
-
-
     }
+    
+    @media screen and (max-width: 768px){
+        .desktop-menu {
+            display: none;
+        }
+    }
+}
 
+@media screen and (max-width: 768px){
+    header {
+        height: 300px;
+    }
 }
 
 .top-blocks {
@@ -83,7 +154,7 @@ header {
 
     .top-blocks__name-block {
         width: 100%;
-        padding: 5% 0 5% 0; 
+        padding: 5% 0 5% 5%; 
         background: #fff;
         opacity: 0.9;
         position: absolute;
@@ -117,21 +188,25 @@ header {
         justify-content: center;
 
     }
+
+    .top-block {
         
         .top-blocks__name-block {
-            width: 50%;
+            width: 100%;
             padding: 5% 0 5% 0; 
             background: #fff;
             opacity: 0.9;
             position: absolute;
             bottom: 0;
-            font-size: 2vw;
 
             a {
                 display: block;
                 margin-left: 5%;
+                font-size: 4vw;
             }
         }
+
+    }
 }
 
 .wrapper__main-content {
@@ -223,6 +298,26 @@ header {
     .main {
         width: 100%;
         order: 2;
+        font-size: 3vw;
+    }
+
+    .main__section {
+        flex-basis: 48%;
+        margin-top: 8%;
+        position: relative;
+    
+        a {
+            font-size: 4vw;
+            color: #000;
+            display: block;
+            margin-top: 5%;
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+    
+        }
     }
 
     .aside {
