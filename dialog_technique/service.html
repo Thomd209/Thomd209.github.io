@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сервис</title>
-    <link rel="stylesheet" href="styles/service.css">
     <link rel="shortcut icon" href="img/logo-icon.png" type="image/png">
+    <title>Сервис</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/vodopodgotovka_pages_wrapper.css">
+    <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header>
@@ -14,30 +17,26 @@
         <nav class="header__menu header__flex-element">
             <ul class="header__menu-list">
                 <li class="header__menu-list-item">
-                    <a href="#" class="header__menu-link">оборудование</a>
-                    <ul class="header__sub-menu">
-                        <li class="header__production-inserted-menu-item">
-                            <a href="#">Насосы</a>
-                        </li>
-                        <li class="header__production-inserted-menu-item">
-                            <a href="vodopodgotovka.html">Водоподготовка</a>
-                        </li>
-                    </ul>
+                    <a href="equipment.html" class="header__menu-link">оборудование</a>
                 </li>
                 <li class="header__menu-list-item header__production">
-                    <a href="#" class="header__menu-link">сервис</a>
+                    <a href="service.html" class="header__menu-link">сервис</a>
                 </li>
                 <li class="header__menu-list-item">
-                    <a href="#" class="header__menu-link">судовые сзч</a></li>
+                    <a href="vessel-szch.html" class="header__menu-link">судовые сзч</a></li>
                 <li class="header__menu-list-item">
-                    <a href="#" class="header__menu-link">инжиниринг</a>
+                    <a href="engineering.html" class="header__menu-link">инжиниринг</a>
                 </li>
             </ul>
         </nav>
-        <a href="#" class="header__menu-link header__our-team">наша команда</a>
+        <a href="laboratory.html" class="header__menu-link header__laboratory">лаборатория</a>
         <img class="header__tel-img header__contacts" src="img/tel.png" alt="phone">
-        <span class="header__tel-number-top header__contacts">+7 (812) 719-68-68</span>
-        <span class="header__tel-number-bottom header__contacts">+7 (812) 719-73-73</span>
+        <a href="tel:+78127196868" class="header__tel-number-top-link">
+            <span class="header__tel-number-top header__contacts">+7 (812) 719-68-68</span>
+        </a>
+        <a href="tel:+78127197373" class="header__tel-number-top-link">
+            <span class="header__tel-number-bottom header__contacts">+7 (812) 719-73-73</span>
+        </a>
     </header>
     <div class="site-path">
         <span>сервис</span>
@@ -56,26 +55,19 @@
             </div>
             <div class="footer__tel">
                 <div class="footer__tel-numbers">
-                    <span>+7 (812) 719-68-68</span>
-                    <span>+7 (812) 719-73-73</span>
+                    <span><a href="tel:+78127196868">+7 (812) 719-68-68</a></span>
+                    <span><a href="tel:+78127197373">+7 (812) 719-73-73</a></span>
                 </div>
             </div>
             <div class="footer__email">
-                <span class="footer__email-text">office@diateh.ru</span>
+                <span class="footer__email-text"><a href="mailto:office@diateh.ru">office@diateh.ru</a></span>
             </div>
         </article>
         <article class="footer__inform">
             <h3 class="footer__contacts-title">дополнительно</h3>
             <div class="footer__inform-text">
-                <span>История компании</span>
-                <span class="footer__inform-span-2">Карьера у нас</span>
-            </div>
-        </article>
-        <article class="footer__news">
-            <h3 class="footer__contacts-title">новости</h3>
-            <div class="footer__news-text">
-                <span>Поставка комплекта <br> оборудования для <br> водоподготовки</span>
-                <span>Поставка насосного <br> оборудования на проект межгалактического крейсера</span>
+                <span><a href="our-team.html">Наша команда</a></span>
+                <span class="footer__inform-span-2"><a href="career.html">Карьера у нас</a></span>
             </div>
         </article>
     </footer>

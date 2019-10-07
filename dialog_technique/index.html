@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
     <link rel="shortcut icon" href="img/logo-icon.png" type="image/png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/main_page.css"/>
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/footer.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 </head>
 <body>
@@ -30,10 +31,14 @@
                 </li>
             </ul>
         </nav>
-        <a href="our-team.html" class="header__menu-link header__our-team">наша команда</a>
+        <a href="laboratory.html" class="header__menu-link header__laboratory">лаборатория</a>
         <img class="header__tel-img header__contacts" src="img/tel.png" alt="phone">
-        <span class="header__tel-number-top header__contacts">+7 (812) 719-68-68</span>
-        <span class="header__tel-number-bottom header__contacts">+7 (812) 719-73-73</span>
+        <a href="tel:+78127196868" class="header__tel-number-top-link">
+            <span class="header__tel-number-top header__contacts">+7 (812) 719-68-68</span>
+        </a>
+        <a href="tel:+78127197373" class="header__tel-number-top-link">
+            <span class="header__tel-number-bottom header__contacts">+7 (812) 719-73-73</span>
+        </a>
     </header>
     <main>
         <div class="top-slider">
@@ -57,51 +62,51 @@
             </div>
         </div>
         <div class="separator"></div>
-        <h2 class="title-about">О нас</h2>
+        <h2 class="title-about"><a href="our-team.html">О нас</h2>
         <div class="about-container">
             <div class="about-block">
                 <img src="img/about_img-workers.png" class="about-container__img img-fluid" alt="">
-                <span>&laquo;Диалог-Техника&raquo;. Послание Клиенту</span>
+                <a href="our-team.html">&laquo;Диалог-Техника&raquo;. Послание Клиенту</span>
             </div>
             <div class="about-block">
                 <img src="img/about_img-sea.png" class="about-container__img img-fluid" alt="">
-                <span>Наш опыт</span>
+                <a href="our-team.html">Наш опыт</span>
             </div>
             <div class="about-block">
                 <img src="img/about_img-workers.png" class="about-container__img img-fluid" alt="">
-                <span>Благодарственные письма</span>
+                <a href="our-team.html">Благодарственные письма</span>
             </div>
         </div>
         <div class="separator"></div>
-        <h2 class="title-about">Последние новости</h2>
-        <h3 class="title-right"><a href="#">Показать еще <i class="fas fa-arrow-right fa-sm"></i></a></h3>
+        <h2 class="title-news"><a href="news.html">Последние новости</a></h2>
+        <h3 class="title-right"><a href="news.html">Показать еще <i class="fas fa-arrow-right fa-sm"></i></a></h3>
         <div class="news">
             <div class="news__left-block">
                 <img src="img/neva_new.jpg" class="about-container__img" alt="">
                 <span class="news__left-block-date">17.09.2019</span>
-                <span class="news__left-block__title">ООО "Диалог-Техника" участвует в выставке "Нева 2019"</span>
+                <a href="news.html" class="news__left-block__title">ООО "Диалог-Техника" участвует в выставке "Нева 2019"</a>
                 <span class="news__left-block__text">Пресс-релиз об участии компании в выставке</span>
             </div>
             <div class="news__right-blocks">
                 <div class="news__right-block">
                     <img src="img/neva_new.jpg" class="about-container__img" alt="">
                     <span class="news-right-block__date">18.09.2019</span>
-                    <span class="news-right-block__title">Договоренность о сотрудничестве с HMSA</span>
+                    <a href="news.html" class="news-right-block__title">Договоренность о сотрудничестве с HMSA</a>
                 </div>
                 <div class="news__right-block">
                     <img src="img/neva_new.jpg" class="about-container__img" alt="">
                     <span class="news-right-block__date">19.09.2019</span>
-                    <span class="news-right-block__title">Договоренность о сотрудничестве с Hamann A.G.</span>
+                    <a href="news.html" class="news-right-block__title">Договоренность о сотрудничестве с Hamann A.G.</a>
                 </div>
                 <div class="news__right-block">
                     <img src="img/neva_new.jpg" class="about-container__img secondrow" alt="">
                     <span class="news-right-block__date">19.09.2019</span>
-                    <span class="news-right-block__title">Обсуждение совместной работы с DOE</span>
+                    <a href="news.html" class="news-right-block__title">Обсуждение совместной работы с DOE</a>
                 </div>
                 <div class="news__right-block">
                     <img src="img/neva_new.jpg" class="about-container__img secondrow" alt="">
                     <span class="news-right-block__date">20.09.2019</span>
-                    <span class="news-right-block__title">"Нева 2019". Подведение итогов</span>
+                    <a href="news.html" class="news-right-block__title">"Нева 2019". Подведение итогов</a>
                 </div>
             </div>
         </div>
@@ -181,26 +186,19 @@
             </div>
             <div class="footer__tel">
                 <div class="footer__tel-numbers">
-                    <span>+7 (812) 719-68-68</span>
-                    <span>+7 (812) 719-73-73</span>
+                    <span><a href="tel:+78127196868">+7 (812) 719-68-68</a></span>
+                    <span><a href="tel:+78127197373">+7 (812) 719-73-73</a></span>
                 </div>
             </div>
             <div class="footer__email">
-                <span class="footer__email-text">office@diateh.ru</span>
+                <span class="footer__email-text"><a href="mailto:office@diateh.ru">office@diateh.ru</a></span>
             </div>
         </article>
         <article class="footer__inform">
             <h3 class="footer__contacts-title">дополнительно</h3>
             <div class="footer__inform-text">
-                <span>История компании</span>
-                <span class="footer__inform-span-2">Карьера у нас</span>
-            </div>
-        </article>
-        <article class="footer__news">
-            <h3 class="footer__contacts-title">новости</h3>
-            <div class="footer__news-text">
-                <span>Поставка комплекта <br> оборудования для <br> водоподготовки</span>
-                <span>Поставка насосного <br> оборудования на проект межгалактического крейсера</span>
+                <span><a href="our-team.html">Наша команда</a></span>
+                <span class="footer__inform-span-2"><a href="career.html">Карьера у нас</a></span>
             </div>
         </article>
     </footer>

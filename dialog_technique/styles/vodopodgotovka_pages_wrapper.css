@@ -1,0 +1,51 @@
+.vodopodgotovka__wrapper {
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.2vw;
+}
+
+.site-path {
+    width: 96.5%;
+    padding: 1% 1% 1% 0;
+    background: #D3D3D3;
+    position: sticky;
+    top: 8em;
+    left: 2.5vw;
+    z-index: 1;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+main {
+    flex: 0 0 70%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.main__content-title {
+    margin-left: 1%;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+.aside {
+    flex: 0 0 30%;
+    margin-left: 2.5%;
+}
+  
+.aside__lists ul {
+    margin-top: 10%;
+}
+
+aside ul {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    list-style-type: none; 
+}
+
+aside a {
+    color: #000;
+    text-decoration: none;
+}
