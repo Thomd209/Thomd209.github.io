@@ -2,6 +2,7 @@
 .top-slider
 {
     width: 100%; 
+    margin-top: 14%;
     position: relative;
     display: block;
     z-index: 1;
