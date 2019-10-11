@@ -1,8 +1,21 @@
 main .main__offer {
-  position: absolute;
-  top: 0%; }
+
+}
+
+@media screen and (max-width: 768px) {
+  main .main__offer {
+
+  }
+}
+
 main .main__description {
-  margin: 8% 0 0 0; }
+  margin: 3% 0 0 0; }
+
+@media all and (max-width: 768px) {
+  main .main__description {
+    margin-top: 3%;
+  }
+}
 main span {
   display: block; }
 
