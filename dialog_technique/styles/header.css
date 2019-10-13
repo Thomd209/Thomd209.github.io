@@ -11,7 +11,7 @@ body {
   overflow-x: hidden; 
 }
 
-header {
+.header-desktop {
     width: 100%;
     position: fixed;
     top: 0;
@@ -21,14 +21,14 @@ header {
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
 }
   
-  .header__logo {
+  .header-desktop__logo {
     width: 20%;
     height: auto;
     padding: 1% 0 1% 0;
     position: absolute;
     left: 2.5%; }
   
-  .header__menu .header__menu-list {
+  .header-desktop__menu .header-desktop__menu-list {
     width: 40%;
     position: absolute;
     top: 40%;
@@ -36,29 +36,15 @@ header {
     display: flex;
     justify-content: space-between;
     list-style-type: none; }
-  .header__menu li > ul {
-    display: none;
-    flex-flow: column wrap;
-    position: absolute;
-    margin-left: -1%;
-    list-style-type: none;
-    text-align: center;
-    background: #ffffff;
-    z-index: 100; }
-    .header__menu li > ul li {
-      margin-top: 10px;
-      padding-bottom: 3%;
-      border-bottom: 1px solid #000; }
-    .header__menu li > ul a {
-      color: #000; }
-  .header__menu a {
+  
+  .header-desktop__menu a {
     display: block;
     font-size: 1.2vw;
     text-decoration: none;
     color: #000;
     text-transform: uppercase; }
   
-    .header__laboratory {
+    .header-desktop__laboratory {
       position: absolute;
       top: 40%;
       left: 70%;
@@ -69,19 +55,20 @@ header {
       text-transform: uppercase;
     }
   
-    .header__laboratory:hover {
+    .header-desktop__laboratory:hover {
       color: #000;
       text-decoration: none;
     }
   
-  .header__tel-img {
+  .header-desktop__tel-img {
     width: 2.5%;
     height: auto;
     position: absolute;
     top: 35%;
-    left: 83%; }
+    left: 83%; 
+  }
 
-  .header__tel-numbers-block {
+  .header-desktop__tel-numbers-block {
     width: 11%;
     position: absolute;
     top: 30%;
@@ -90,17 +77,78 @@ header {
     flex-direction: column;
   }
   
-  .header__tel-number-top-link {
+  .header-desktop__tel-number-top-link {
     display: block;
     font-size: 1.2vw;
     color: #000; 
     text-decoration: none;
   }
   
-  .header__tel-number-bottom-link {
+  .header-desktop__tel-number-bottom-link {
     display: block;
     margin-top: 5%;
     font-size: 1.2vw;
     color: #000; 
     text-decoration: none;
+  }
+
+  @media all and (min-width: 769px) {
+    .header-mobile {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .header-desktop {
+      display: none;
+    }
+
+    .header-mobile {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      background: #fff;
+      z-index: 10;
+      padding-bottom: 25%;
+      box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-mobile__logo {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2.5%;
+    }
+
+    .header-mobile__menu-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2.5%;
+      font-size: 10vw;
+    }
+
+    .header-mobile__menu {
+      display: none;
+    }
+
+    .header-mobile__laboratory {
+      display: none;
+    }
+
+    .header-mobile__tel-img {
+      width: 2.5%;
+      height: auto;
+      position: absolute;
+      top: 35%;
+      left: 83%; 
+      display: none;
+    }
+
+    .header-mobile__tel-numbers-block { 
+      display: none;
+    }
+
+
   }

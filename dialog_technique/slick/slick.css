@@ -20,6 +20,12 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+@media all and (max-width: 768px) {
+    .top-slider {
+        margin-top: 30%;
+    }
+}
+
 .slick-list
 {
     position: relative;
