@@ -12,29 +12,63 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img class="header__logo" src="img/logo.png" alt="ДИАЛОГ ТЕХНИКА"></a>
-        <nav class="header__menu header__flex-element">
-            <ul class="header__menu-list">
-                <li class="header__menu-list-item">
-                    <a href="equipment.html" class="header__menu-link">оборудование</a>
+    <header class="header-desktop">
+        <a href="index.html">
+            <img class="header-desktop__logo" src="img/logo.png" alt="ДИАЛОГ ТЕХНИКА">
+        </a>
+        <nav class="header-desktop__menu header__flex-element">
+            <ul class="header-desktop__menu-list">
+                <li class="header-desktop__menu-list-item">
+                    <a href="equipment.html" class="header-desktop__menu-link">оборудование</a>
                 </li>
-                <li class="header__menu-list-item header__production">
-                    <a href="spares.html" class="header__menu-link">запчасти</a>
+                <li class="header-desktop__menu-list-item header__production">
+                    <a href="spares.html" class="header-desktop__menu-link">запчасти</a>
                 </li>
-                <li class="header__menu-list-item">
-                    <a href="service.html" class="header__menu-link">сервис</a>
+                <li class="header-desktop__menu-list-item">
+                    <a href="service.html" class="header-desktop__menu-link">сервис</a>
                 </li>
-                <li class="header__menu-list-item">
-                    <a href="engineering.html" class="header__menu-link">инжиниринг</a>
+                <li class="header-desktop__menu-list-item">
+                    <a href="engineering.html" class="header-desktop__menu-link">инжиниринг</a>
                 </li>
             </ul>
         </nav>
-        <a href="laboratory.html" class="header__menu-link header__laboratory">лаборатория</a>
-        <img class="header__tel-img header__contacts" src="img/tel.png" alt="phone">
-        <div class="header__tel-numbers-block">
-            <a href="tel:+78127196868" class="header__tel-number-top-link">+7 (812) 719-68-68</a>
-            <a href="tel:+78127197373" class="header__tel-number-bottom-link">+7 (812) 719-73-73</a>
+        <a href="laboratory.html" class="header-desktop__menu-link header-desktop__laboratory">лаборатория</a>
+        <img class="header-desktop__tel-img header-desktop__contacts" src="img/tel.png" alt="phone">
+        <div class="header-desktop__tel-numbers-block">
+            <a href="tel:+78127196868" class="header-desktop__tel-number-top-link">+7 (812) 719-68-68</a>
+            <a href="tel:+78127197373" class="header-desktop__tel-number-bottom-link">+7 (812) 719-73-73</a>
+        </div>  
+    </header>
+    <header class="header-mobile">
+        <a href="index.html">
+            <img class="header-mobile__logo" src="img/logo.png" alt="ДИАЛОГ ТЕХНИКА">
+        </a>
+        <span class="header-mobile__menu-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="header-mobile__menu-all-links">
+            <nav class="header-mobile__menu header__flex-element">
+                <ul class="header-mobile__menu-list">
+                    <li class="header-mobile__menu-list-item">
+                        <a href="equipment.html" class="header-mobile__menu-link">оборудование</a>
+                    </li>
+                    <li class="header-mobile__menu-list-item header__production">
+                        <a href="spares.html" class="header-mobile__menu-link">запчасти</a>
+                    </li>
+                    <li class="header-mobile__menu-list-item">
+                        <a href="service.html" class="header-mobile__menu-link">сервис</a>
+                    </li>
+                    <li class="header-mobile__menu-list-item">
+                        <a href="engineering.html" class="header-mobile__menu-link">инжиниринг</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="laboratory.html" class="header-mobile__menu-link header-mobile__laboratory">лаборатория</a>
+            <img class="header-mobile__tel-img header__contacts" src="img/tel.png" alt="phone">
+            <div class="header-mobile__tel-numbers-block">
+                <a href="tel:+78127196868" class="header-mobile__tel-number-top-link">+7 (812) 719-68-68</a>
+                <a href="tel:+78127197373" class="header-mobile__tel-number-bottom-link">+7 (812) 719-73-73</a>
+            </div>  
         </div>
     </header>
     <div class="site-path">
@@ -145,6 +179,6 @@
         </article>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="scripts/header_scroll.js"></script>
+    <script src="scripts/header.js"></script>
 </body>
 </html>
