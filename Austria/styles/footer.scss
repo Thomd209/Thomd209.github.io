@@ -1,0 +1,210 @@
+.footer__categories-lists {
+    width: 945px;
+    height: 400px;
+    margin: 3% auto;
+    position: relative;
+
+    & h2 {
+        color: $cyan-color;
+        font-size: 1em;
+    }
+
+    & a {
+        color: #000;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+}
+
+.footer__categories-lists a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__category-list {
+    position: absolute;
+    margin-bottom: 3%;
+
+    & li {
+        margin-bottom: 2%;
+    }
+}
+
+.footer__category-list-transport {
+    top: 0;
+    left: 0;
+}
+
+.footer__category-list-electronics {
+    top: 43%;
+    left: 0%;
+}
+
+.footer__category-list-property {
+    top: 0%;
+    left: 25%;
+}
+
+.footer__category-list-sport {
+    top: 54.9%;
+    left: 25%;
+}
+
+.footer__category-list-job {
+    top: 0%;
+    left: 51%;
+}
+
+.footer__category-list-house {
+    top: 30%;
+    left: 51%;
+}
+
+.footer__category-list-business {
+    top: 75%;
+    left: 51%;
+}
+
+.footer__category-services {
+    top: 0;
+    right: 17%;
+}
+
+.footer__category-list-animals {
+    top: 15%;
+    right: 7%;
+}
+
+.footer__category-list-personal-items {
+    top: 60%;
+    right: 2.3%;
+}
+
+.separator {
+    width: 945px;
+    margin: 3% auto 1% auto;
+}
+
+.footer__bottom-part {
+    width: 945px;
+    height: 100px;
+    margin: 0% auto;
+    position: relative;
+
+    & span, ul {
+        position: absolute;
+    }
+}
+
+.footer__logo-block {
+    width: 15%;
+    padding: 5px;
+    background: #f36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+
+}
+
+.footer__btn-make-ad {
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    background: $cyan-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 0.6em;
+}
+
+.footer__make-ad-list {
+    margin: 0;
+    top: 0%;
+    left: 25%;
+
+    & a {
+        display: block;
+        margin-bottom: 5%;
+        color: #666;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+}
+
+.footer__about-company {
+    margin: 0;
+    left: 45%;
+
+    & a {
+        display: block;
+        margin-bottom: 5%;
+        color: #666;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+}
+
+.footer__company-name {
+    margin: 0;
+    position: absolute;
+    left: 59%;
+    font-size: 0.8em;
+
+    & :first-child {
+        margin-bottom: 3%;
+    }
+
+    & a {
+        display: block;
+        margin-bottom: 5%;
+        color: $cyan-color;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 100%;
+    }
+}
+
+.footer__social-networks-title {
+    position: absolute;
+    right: 1%;
+    font-size: 0.9em;
+}
+
+.footer__social-networks {
+    width: 12.3%;
+    position: absolute;
+    top: 30%;
+    right: 0.8%;
+}
+
+.footer__social-network {
+    flex-basis: 24%;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    color: $cyan-color;
+}
+
+.footer__social-network-fb {
+    left: 0%;
+}
+
+.footer__social-network-vk {
+    left: 25%;
+}
+
+.footer__social-network-insta {
+    left: 63%;
+}
+
+.footer__social-network-ok {
+    left: 100%;
+}
