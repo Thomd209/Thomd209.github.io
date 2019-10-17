@@ -107,7 +107,7 @@ header {
 }
 
 .header__menu {
-    width: 30%;
+    width: 90%;
     margin-left: 1%;
     font-size: 1em;
 }
@@ -115,6 +115,9 @@ header {
 .header__menu-list {
     display: flex;
     list-style-type: none;
+
+    & li {
+    }
 }
 
 .header__menu-list-link {
@@ -125,7 +128,7 @@ header {
 }
 
 .header__menu-list :not(:first-child) {
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 
 .header__search {

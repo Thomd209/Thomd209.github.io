@@ -123,7 +123,7 @@ header {
   background: #ececec; }
 
 .header__menu {
-  width: 30%;
+  width: 90%;
   margin-left: 1%;
   font-size: 1em; }
 
@@ -140,7 +140,7 @@ header {
   text-decoration: none; }
 
 .header__menu-list :not(:first-child) {
-  margin-left: 5%; }
+  margin-left: 2.5%; }
 
 .header__search {
   width: 100%;
@@ -255,11 +255,11 @@ header {
   .main__choose-ads-top-list :nth-child(2) {
     margin-left: 7%; }
   .main__choose-ads-top-list :nth-child(3) {
-    margin-left: 8%; }
+    margin-left: 2.75%; }
   .main__choose-ads-top-list :nth-child(4) {
-    margin-left: 12%; }
+    margin-left: 4%; }
   .main__choose-ads-top-list :nth-child(5) {
-    margin-left: 12.5%; }
+    margin-left: 8%; }
   .main__choose-ads-top-list a {
     color: #01aaff;
     text-decoration: none; }
@@ -270,13 +270,13 @@ header {
   display: flex;
   list-style-type: none; }
   .main__choose-ads-bottom-list :nth-child(2) {
-    margin-left: 10.5%; }
+    margin-left: 5.5%; }
   .main__choose-ads-bottom-list :nth-child(3) {
-    margin-left: 2.5%; }
+    margin-left: 13.5%; }
   .main__choose-ads-bottom-list :nth-child(4) {
-    margin-left: 4.25%; }
+    margin-left: 10%; }
   .main__choose-ads-bottom-list :nth-child(5) {
-    margin-left: 6%; }
+    margin-left: 4%; }
   .main__choose-ads-bottom-list a {
     color: #01aaff;
     text-decoration: none; }
@@ -380,7 +380,7 @@ header {
   left: 0; }
 
 .footer__category-list-electronics {
-  top: 43%;
+  top: 40%;
   left: 0%; }
 
 .footer__category-list-property {
@@ -388,7 +388,7 @@ header {
   left: 25%; }
 
 .footer__category-list-sport {
-  top: 54.9%;
+  top: 52%;
   left: 25%; }
 
 .footer__category-list-job {
@@ -405,11 +405,11 @@ header {
 
 .footer__category-services {
   top: 0;
-  right: 17%; }
+  right: 10%; }
 
 .footer__category-list-animals {
   top: 15%;
-  right: 7%; }
+  right: 15%; }
 
 .footer__category-list-personal-items {
   top: 60%;
