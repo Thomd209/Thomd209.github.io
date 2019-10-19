@@ -1,14 +1,22 @@
-.main__choose-ads {
-    width: 945px;
-    margin: 3% auto;
-    font-size: 1em;
-}
-
-@media all and (min-width: 769px) and (max-width: 992px) {
+@media all and (min-width: 991px) {
     .main__choose-ads {
-        width: 769px;
+        width: 945px;
         margin: 3% auto;
         font-size: 1em;
+    }
+}
+
+@media all and (max-width: 990px) {
+    .main__choose-ads {
+        width: 100%;
+        margin: 3% auto;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .main__choose-ads-title {
+        display: none;
     }
 }
 
@@ -64,26 +72,105 @@
     }
 }
 
-.main__ads {
-    width: 945px;
-    margin: auto;
+@media all and (max-width: 990px) {
+    .main__choose-ads-top-list, .main__choose-ads-bottom-list {
+        display: none;
+    }
 }
 
-.main__ads-title {
-    font-size: 2em;
+@media all and (min-width: 991px) {
+    .main__ads {
+        width: 945px;
+        margin: auto;
+    }
 }
 
-.main__ads-cards {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: flex-start;
+@media all and (max-width: 990px) {
+    .main__ads {
+        width: 100%;
+        margin: auto;
+    }
 }
 
-.main__add {
-    flex-basis: 24%;
-    margin-bottom: 3%;
+@media all and (min-width: 991px) {
+    .main__ads-title-mobile {
+        display: none;
+    }
+    
+    .main__ads-title-desktop {
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 990px) {
+    .main__ads-title-desktop {
+        display: none;
+    }
+
+    .main__ads-title-mobile {
+        display: block;
+        width: 80%;
+        margin: 6% auto 3% auto;
+        text-align: center;
+        font-size: 1.75em;
+    }
+}
+
+@media all and (min-width: 991px) {
+    .main__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 990px) {
+    .main__cards {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+
+        & :nth-child(5), :nth-child(6), :nth-child(7), :nth-child(8) {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 425px) {
+    .main__cards {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        & .main__card:nth-child(4), .main__card:nth-child(5), .main__card:nth-child(6), .main__card:nth-child(7), .main__card:nth-child(8) {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 991px) {
+    .main__card {
+        flex-basis: 24%;
+        margin-bottom: 3%;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 990px) {
+    .main__card {
+        flex-basis: 48%;
+        margin-bottom: 5%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .main__card {
+        flex-basis: 100%;
+        margin-bottom: 5%;
+    }
 }
 
 .main__ad-img {
@@ -103,15 +190,64 @@
         margin: 3% 0 10% 6%;
     }
 
+    @media all and (max-width: 990px) {
+        & :not(:last-child) {
+            position: absolute;
+            left: 10%;
+            margin: 0;
+        }
+    }
+
+    & :nth-child(1) {
+        top: 10%;
+    }
+
+    & :nth-child(2) {
+        top: 40%;
+    }
+
+    & :nth-child(3) {
+        top: 70%;
+    }
+
     .main__ad-city {
         color: #a3a3a3;
     }
 
-    .main__ad-date {
-        position: absolute;
-        top: -5%;
-        right: 10%;
-        font-size: 0.8em;
+    @media all and (max-width: 990px) {
+        .main-ad-city {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            margin: 0;
+        }
+    }
+
+    @media all and (max-width: 980px) {
+        .main-ad-city {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+    }
+
+    @media all and (min-width: 991px) {
+        .main__ad-date {
+            position: absolute;
+            top: -5%;
+            right: 10%;
+            font-size: 0.8em;
+        }
+    }
+
+    @media all and (max-width: 990px) {
+        .main__ad-date {
+            position: absolute;
+            top: 0%;
+            right: 10%;
+            font-size: 1em;
+            color: #c3c3c3;
+        }
     }
 
     .main__ad-price {
@@ -123,14 +259,32 @@
     }
 }
 
-.main__btn-open-new-cards {
-    width: 150px;
-    margin: auto;
-    padding: 10px;
-    border-radius: 5px;
-    background: $cyan-color;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+@media all and (min-width: 991px) {
+    .main__btn-open-new-cards {
+        width: 150px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background: $cyan-color;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+@media all and (max-width: 990px) {
+    .main__btn-open-new-cards {
+        width: 60%;
+        margin: auto;
+        padding: 10px 0;
+        border: 2px solid $cyan-color;
+        border-radius: 5px;
+        background: #fff;
+        color: $cyan-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+}

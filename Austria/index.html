@@ -13,6 +13,9 @@
     <header>
         <div class="header__content-wrapper">
             <div class="header__logo-container">
+                <span class="header__sign-in-mobile">
+                    <i class="fas fa-sign-in-alt"></i>
+                </span>
                 <div class="header__make-ad-container">
                     <span class="header__btn-make-ad">Anzeige aufgeben</span>
                 </div>
@@ -20,14 +23,15 @@
                     <span class="header__city">Wien</span>
                     <span class="choose-city">Region ändern</span>
                 </div>
-                <div class="header__logo">
-                    <span class="header__logo-text">Лого</span>
-                </div>
+                <span class="header__logo">Лого</span>
                 <div class="sign-up-container">
                     <span class="sign-up">Einloggen | Registrieren</span>
                 </div>
+                <span class="header__burger-icon-mobile">
+                    <i class="fas fa-bars fa-lg"></i>
+                </span>
             </div>
-            <div class="separator"></div>
+            <div class="header__separator-line"></div>
             <nav class="header__menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-list-item">
@@ -50,6 +54,10 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header__mobile-choose-city">
+                <span>Wien</span>
+                <span>Region ändern</span>
+            </div>
             <div class="header__search">
                 <div class="header__all-cities">
                     <span class="header__all-cities-city">Wien</span>
@@ -75,6 +83,18 @@
                 <div class="search-photo">
                     <input class="header__search-photo-checkbox" type="checkbox">
                     <span>Nur mit Foto</span>
+                </div>
+            </div>
+            <div class="header__ad-parametrs-mobile">
+                <div class="header__kategorie-mobile">
+                    <span>
+                        <i class="fas fa-align-left"></i>
+                    </span>
+                    <span>Kategorie</span>
+                </div>
+                <div class="header__filter-mobile">
+                    <img src="img/filter.png" alt="">
+                    <span>Filter</span>
                 </div>
             </div>
         </div>
@@ -118,9 +138,10 @@
             </ul>
         </div>
         <div class="main__ads">
-            <h2 class="main__ads-title">Das beste für Sie</h2>
-            <div class="main__ads-cards">
-                <div class="main__add">
+                <h2 class="main__ads-title-mobile">Speziel für Sie</h2>
+            <h2 class="main__ads-title-desktop">Das beste für Sie</h2>
+            <div class="main__cards">
+                <div class="main__card">
                     <img src="img/bike.jpg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -129,7 +150,7 @@
                         <span class="main__ad-date">Heute 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/helmet.jpg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -138,7 +159,7 @@
                         <span class="main__ad-date">Gestern 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/scooter.jpeg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -147,7 +168,7 @@
                         <span class="main__ad-date">12.01.2019 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/bike_2.jpeg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -156,7 +177,7 @@
                         <span class="main__ad-date">Heute 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/bike.jpg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -165,7 +186,7 @@
                         <span class="main__ad-date">Heute 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/helmet.jpg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -174,7 +195,7 @@
                         <span class="main__ad-date">Gestern 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/scooter.jpeg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -183,7 +204,7 @@
                         <span class="main__ad-date">12.01.2019 12:40</span>
                     </div>
                 </div>
-                <div class="main__add">
+                <div class="main__card">
                     <img src="img/bike_2.jpeg" alt="" class="main__ad-img">
                     <div class="main__ad-text">
                         <span class="main__ad-price">700 €</span>
@@ -282,7 +303,7 @@
         </div>
         <div class="separator"></div>
         <div class="footer__bottom-part">
-            <span class="footer__logo-block">лого</span>
+            <span class="footer__logo">лого</span>
             <span class="footer__btn-make-ad">Anzeige aufgeben</span>
             <ul class="footer__make-ad-list">
                 <li><a href="#">Anzeige aufgeben</a></li>
@@ -309,5 +330,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/header__menu.js"></script>
 </body>
 </html>
