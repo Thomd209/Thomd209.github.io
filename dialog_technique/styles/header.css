@@ -160,7 +160,7 @@ body {
 
     .header-mobile__menu {
       order: 2;
-      margin-top: 0.1em;
+      margin-top: -0.5em;
     }
 
     .header-mobile__menu-list-item {
@@ -174,21 +174,9 @@ body {
       margin: 1.5em 0 1em 0;
     }
 
-    .header-mobile__tel-img {
-      width: 12%;
-      height: auto;
-      position: absolute;
-      top: 4%;
-      left: 1%; 
-      display: none;
-    }
+  }
 
-    .header-mobile__tel-numbers-block { 
-      order: 1;
-      display: flex;
-      flex-direction: column;
-      transform: translateY(20%);
-    }
-
-
+  .site-path__link {
+    color: #000;
+    text-decoration: none;
   }

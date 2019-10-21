@@ -1,36 +1,87 @@
-    .gidrofornye-settings {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .gidrofornye-settings__description {
-      width: 50%;
-      margin-top: 3%;
-      font-size: 1.2vw;
-      align-self: center;
-    }
-  
-    .gidrofornye-settings__description table td {
-      padding: 0.5em;
-    }
-  
-    .cell-text-center {
-      padding-left: 5%;
-      text-align: center;
-    }
-  
-    .gidrofornye-settings__imgs {
-      width: 50%;
-      margin-top: 3%;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .gidrofornye-settings__img {
-      width: 100%;
-    }
-  
-    .gidrofornye-settings__img-right {
-      margin-left: 20%;
-    }
+@media all and (min-width: 769px) {
+  .main__title {
+    margin-left: 1%;
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main__title {
+    font-size: 5.5vw;
+  }
+}
+
+.gidrofornye-settings {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .gidrofornye-settings {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .gidrofornye-settings__description {
+    width: 50%;
+    margin-top: 3%;
+    font-size: 1.2vw;
+    align-self: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .gidrofornye-settings__description {
+    width: 80%;
+    margin: 3% auto;
+    font-size: 4.5vw;
+  }
+
+  .gidrofornye-settings__description table {
+    margin: auto;
+  }
+}
+
+.gidrofornye-settings__description table td {
+  padding: 0.5em;
+}
+
+.cell-text-center {
+  padding-left: 5%;
+  text-align: center;
+}
+
+.gidrofornye-settings__imgs {
+  width: 50%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .gidrofornye-settings__imgs {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gidrofornye-settings__imgs img {
+    width: 70%;
+    margin: 5% auto;
+  }
+}
+
+.gidrofornye-settings__img {
+  width: 100%;
+}
+
+.gidrofornye-settings__img-right {
+  margin-left: 20%;
+}

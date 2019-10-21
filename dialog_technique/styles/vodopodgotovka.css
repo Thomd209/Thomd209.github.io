@@ -1,22 +1,15 @@
-main .main__offer {
-
-}
-
-@media screen and (max-width: 768px) {
-  main .main__offer {
-
-  }
-}
-
 main .main__description {
-  margin: 3% 0 0 0; }
+  margin-top: 3%; 
+}
+
+main span {
+  display: block;
+}
 
 @media all and (max-width: 768px) {
-  main .main__description {
-    margin-top: 3%;
+  main span {
+    font-size: 4vw;
   }
 }
-main span {
-  display: block; }
 
  

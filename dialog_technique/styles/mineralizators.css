@@ -1,24 +1,65 @@
+@media all and (min-width: 769px) {
+  .main__title {
+    margin-left: 1%;
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main__title {
+    font-size: 5vw;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (min-width: 769px) {
   .mineralizators {
     width: 50%;
     margin: 3% 0%;
     display: flex;
     justify-content: space-between;
   }
+}
 
+@media all and (max-width: 768px) {
+  .mineralizators {
+    width: 100%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mineralizators__description {
+  align-self: center;
+  font-size: 1.2vw;
+}
+
+@media all and (max-width: 768px) {
   .mineralizators__description {
-    align-self: center;
-    font-size: 1.2vw;
+    font-size: 4vw;
   }
+}
 
-  .mineralizators__description table td {
-    padding: 0.5em;
-  }
+.mineralizators__description table td {
+  padding: 0.5em;
+}
 
-  .cell-text-center {
-    padding-left: 5%;
-    text-align: center;
-  }
+.cell-text-center {
+  padding-left: 5%;
+  text-align: center;
+}
 
+.mineralizators__img {
+  width: 30%;
+}
+
+@media all and (max-width: 768px) {
   .mineralizators__img {
-    width: 30%;
+    width: 50%;
+    margin: 10% auto;
   }
+}
