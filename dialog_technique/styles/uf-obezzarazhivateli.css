@@ -9,6 +9,8 @@
 
 @media all and (max-width: 768px) {
   .main__title {
+    font-weight: normal;
+    text-transform: uppercase;
     font-size: 5.5vw;
   }
 }
