@@ -94,6 +94,11 @@
     margin: 5% auto;
 }
 
+.l-model__lfi-img {
+    width: 100%;
+    margin: 0% auto;
+}
+
 .l-model__lft-img {
     width: 70%;
 }

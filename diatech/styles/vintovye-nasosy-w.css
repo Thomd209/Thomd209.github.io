@@ -53,7 +53,7 @@
 }
 
 .w-models {
-    width: 80%;
+    width: 50%;
     margin: 5% auto 0 auto;
     display: flex;
     justify-content: space-between;
@@ -90,13 +90,13 @@
 }
 
 .w-model__img {
-    width: 60%;
+    width: 100%;
     margin: 5% auto;
 }
 
 .w-model__2-img {
     display: block;
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 
