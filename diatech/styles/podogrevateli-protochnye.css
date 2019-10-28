@@ -1,0 +1,91 @@
+.main__title {
+  font-size: 1.5vw;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+@media all and (max-width: 768px) {
+  .main__title {
+    font-size: 5.5vw;
+  }
+}
+
+.main__sub-title {
+  margin-top: 3%;
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  font-weight: normal;
+}
+
+@media all and (max-width: 768px) {
+  .main__sub-title {
+    font-size: 4.5vw;
+  }
+}
+
+.main__title-section {
+  display: block;
+  width: 50%;
+  margin: 3% auto;
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  font-weight: normal;
+}
+
+@media all and (max-width: 768px) { 
+  .main__title-section {
+    font-size: 4.5vw;
+  }
+}
+.podogrevatel-protochnyi {
+  width: 80%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) { 
+  .podogrevatel-protochnyi {
+    width: 100%;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+}
+
+.podogrevatel-protochnyi__description {
+  width: 55%;
+  font-size: 1.2vw;
+  align-self: center;
+}
+
+@media all and (max-width: 768px) { 
+  .podogrevatel-protochnyi__description {
+    width: 100%;
+    font-size: 4vw;
+  }
+}
+
+.podogrevatel-protochnyi__description table td {
+  padding: 0.6em;
+}
+
+.cell-text-center {
+  padding-left: 5%;
+  text-align: center;
+}
+
+.cell-text-center span {
+  display: block;
+}
+
+.podogrevatel-protochnyi__img {
+  width: 40%;
+}
+
+@media all and (max-width: 768px) {
+  .podogrevatel-protochnyi__img {
+    width: 70%;
+    margin: 5% auto;
+  }
+}

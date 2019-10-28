@@ -1,0 +1,15 @@
+main .main__description {
+  margin-top: 3%; 
+}
+
+main span {
+  display: block;
+}
+
+@media all and (max-width: 768px) {
+  main span {
+    font-size: 4vw;
+  }
+}
+
+ 

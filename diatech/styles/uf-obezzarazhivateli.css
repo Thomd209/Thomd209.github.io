@@ -1,0 +1,105 @@
+@media all and (min-width: 769px) {
+  .main__title {
+    margin-left: 1%;
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main__title {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 5.5vw;
+  }
+}
+
+.section-title {
+  display: block;
+  width: 30%;
+  margin: 3% auto;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+@media all and (max-width: 768px) {
+  .section-title {
+    font-size: 5vw;
+  }
+}
+
+.container {
+  width: 60%;
+  margin: 3% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container__description {
+  align-self: center;
+  font-size: 1.2vw;
+}
+
+@media all and (max-width: 768px) {
+  .container__description {
+    font-size: 4vw;
+  }
+}
+
+.container__description table td {
+  padding: 0.5em;
+}
+
+.cell-text-center {
+  padding-left: 5%;
+  text-align: center;
+}
+
+.container__img {
+  width: 30%;
+}
+
+@media all and (max-width: 768px) {
+  .container__img {
+    width: 40%;
+    margin: 10% auto;
+  }
+}
+
+.container-ab__img {
+  width: 30%;
+}
+
+@media all and (max-width: 768px) {
+  .container-cdef__description table {
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container-cdef__description table td {
+    font-size: 4vw;
+  }
+}
+
+.container-cdef__img {
+  width: 40%;
+}
+
+@media all and (max-width: 768px) {
+  .container-cdef__img {
+    width: 50%!important;
+  }
+}
+

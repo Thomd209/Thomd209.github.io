@@ -1,0 +1,217 @@
+.specialists {
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+}
+
+.title {
+  text-align: center;
+}
+
+.specialists__title {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .specialists-slider-desktop {
+    display: none;
+  }
+  .specialists-slider {
+    position: relative;
+  }
+  .specialists__slider {
+    width: 80%;
+    height: 650px;
+    margin: 30px auto 30px auto;
+    position: relative;
+  }
+  .specialists-slider__wrapper {
+    width: 100%;
+    height: 590px;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .specialists-slider__list-mobile {
+    width: 500%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .specialists-slider__list-item {
+    width: 80%;
+    list-style-type: none;
+  }
+  .specialists-slider__profession {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  .specialists-slider__name {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  .specialists-slider__experience {
+    margin-top: 30px;
+    font-size: 0.8em;
+  }
+  .specialists-slider__university {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 0.8em;
+  }
+  .specialists-slider__about {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 0.8em;
+  }
+  .specialists-slider__arrow-left-mobile {
+    position: absolute;
+    top: 575px;
+    left: 1%;
+  }
+  .specialists-slider__arrow-right-mobile {
+    position: absolute;
+    top: 575px;
+    right: 1%;
+  }
+  .specialists-slider__dotes {
+    width: 30%;
+    margin: 5px auto;
+  }
+  .dotes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dote-mobile {
+    background: #e4e4e4;
+  }
+  .specialists-slider__dote {
+    width: 16%;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .slider__dote-active {
+    background: #a3a3a3;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .specialists-slider-mobile {
+    display: none;
+  }
+  .specialists-slider {
+    position: relative;
+  }
+  .specialists__slider {
+    width: 80%;
+    margin: 30px auto 30px auto;
+    position: relative;
+  }
+  .specialists-slider__wrapper {
+    width: 100%;
+    height: 590px;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .specialists-slider__list-desktop {
+    width: 500%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .specialists-slider__list-item {
+    width: 80%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .specialists-slider__profession {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+  }
+  .specialists-slider__name {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+  }
+  .specialists-slider__experience {
+    margin-top: 30px;
+    font-size: 0.8em;
+  }
+  .specialists-slider__university {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 0.8em;
+  }
+  .specialists-slider__about {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .specialists-slider__arrow-left-desktop {
+    position: absolute;
+    top: 250px;
+    left: 1%;
+    cursor: pointer;
+  }
+  .specialists-slider__arrow-right-desktop {
+    position: absolute;
+    top: 250px;
+    right: 1%;
+    cursor: pointer;
+  }
+  .dotes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+  }
+  .specialists-slider__dotes {
+    width: 15%;
+    margin: 0px auto;
+  }
+  .specialists-slider__dote {
+    width: 18%;
+    height: 20px;
+    background: #e4e4e4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .specialists-slider__dote-active {
+    background: #a3a3a3;
+  }
+}
+/*# sourceMappingURL=specialists.css.map */

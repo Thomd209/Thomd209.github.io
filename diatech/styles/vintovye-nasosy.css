@@ -1,0 +1,86 @@
+.main__vintovye-nasosy-title {
+    margin-top: 15%;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: normal;
+}
+
+@media all and (min-width: 551px) and (max-width: 768px)  {
+    .main__vintovye-nasosy-title {
+        margin-top: 3em;
+        font-size: 3.5vw;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .main__vintovye-nasosy-title {
+        margin-top: 5em;
+        font-size: 3.5vw;
+    }
+}
+
+
+.vintovye-nasosy {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .vintovye-nasosy {
+        width: 80%;
+        margin: 5% auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.vintovoi-nosos {
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media all and (max-width: 768px) {
+    .vintovoi-nosos {
+        flex-basis: 100%;
+    }
+}
+
+.vintovoi-nasos__img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.vintovoi-nasos__title {
+    display: block;
+    width: 70%;
+    margin: 0 auto 2% auto;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+    .vintovoi-nasos__title {
+        font-size: 3vw;
+    }
+}
+
+.vintovoi-nasos__description {
+    display: block;
+    width: 70%;
+    margin: 0 auto 2% auto;
+    font-size: 1.3vw;
+}
+
+@media all and (max-width: 768px) {
+    .vintovoi-nasos__description {
+        font-size: 2.5vw;
+    }
+}

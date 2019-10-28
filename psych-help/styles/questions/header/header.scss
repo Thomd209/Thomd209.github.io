@@ -1,0 +1,234 @@
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: 140px;
+        position: relative;
+        
+        .logo {
+            width: 47.5%;
+            height: 76px;
+            position: absolute;
+            left: 7%;
+    
+            .logo__img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .menu-word {
+            position: absolute;
+            right: 16.1%;
+            font-size: 19px;
+        }
+
+        .menu-icon {
+            width: 10%;
+            height: 26px;
+            position: absolute;
+            left: 88%;
+            cursor: pointer;
+
+            .menu-icon__item {
+                display: block;
+                width: 100%;
+                height: 2px;
+                margin-top: 10px;
+                background: #1d1c1c;
+                
+            }
+        }
+
+        .right-menu {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 50px;
+            text-align: right;
+            z-index: 10;
+            background: #8dc33e;
+
+            .right-menu__link {
+                display: block;
+                padding: 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 650px) {
+            .right-menu {
+                top: 70px;
+            }
+        }
+
+        @media screen and (min-width: 651px) and (max-width: 768px) {
+            .right-menu {
+                top: 90px;
+            }
+        }
+
+        .left-menu {
+           display: none;
+        }
+
+        .btn {
+            display: none;
+        }
+
+
+    }
+
+}
+
+
+
+@media screen and (min-width: 769px){
+
+.header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+    
+    .logo {
+        max-width: 13.2%;
+        position: absolute;
+        top: 15px;
+        left: 5%;
+
+        .logo__img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .menu-word {
+        display: none;
+    }
+    .menu-icon {
+        display: none;
+    }
+
+    .left-menu {
+        position: absolute;
+        top: 20px;
+        left: 20%;
+        font-size: 14px;
+
+        .left-menu__list {
+            width: 100%;
+        }
+
+        .left-menu__list-item {
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        .left-menu__link {
+            display: block;
+            padding-left: 10px;
+            color: #9a9a9a;
+            text-decoration: none;
+        }
+
+        .left-menu__first-link {
+            color: #1d1c1c;
+        }
+
+        
+    }
+
+    .right-menu {
+        position: absolute;
+        top: 20px;
+        left: 46%;
+        font-size: 14px;
+
+        .right-menu__list {
+            width: 100%;
+        }
+
+        .right-menu__list-item {
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        .right-menu__link {
+            display: block;
+            padding-left: 10px;
+            text-decoration: none;
+            color: #1d1c1c;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 930px) {
+        .left-menu {
+            left: 15%;
+        }
+
+        .right-menu {
+            left: 40%;
+        }
+
+        .header__btn {
+            background: #000;
+           left: 0%;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #8dc33e;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        .btn__link {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    }
+
+    .header__btn {
+        width: 15%;
+        height: 40px;
+        position: absolute;
+        top: 7px;
+        left: 83%;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 930px) {
+        .left-menu {
+            left: 15%;
+        }
+
+        .right-menu {
+            left: 40%;
+        }
+
+        .header__btn {
+           left: 86%;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px){
+    .header {
+        height: 85px;
+    }
+}
+
+
+
+
+
+
+
