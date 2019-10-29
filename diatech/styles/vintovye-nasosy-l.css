@@ -138,6 +138,7 @@
     .main__values-list li {
         width: 100%;
         margin: 0 auto 3% auto;
+        text-align: center;
         display: flex;
         justify-content: center;
         font-size: 4vw;
