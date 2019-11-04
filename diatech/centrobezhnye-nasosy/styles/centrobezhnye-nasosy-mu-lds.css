@@ -1,0 +1,87 @@
+.main__title {
+    margin: 15% auto 3% 2.5%;
+    text-align: left;
+    font-size: 2.3vw;
+    font-weight: normal;
+}
+
+@media all and (max-width: 550px) {
+    .main__title {
+        margin: 15% auto 0 auto;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+}
+
+@media all and (min-width: 551px) and (max-width: 768px) {
+    .main__title {
+        margin: 10% auto 0 auto;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+}
+
+.main__nasosy-description  {
+    flex-basis: 48%;
+    margin-left: 2.5%;
+}
+
+@media all and (max-width: 768px) {
+    .main__nasosy-description {
+        margin-top: 5%;
+        text-align: center;
+    }
+}
+
+.main__nasosy-description span {
+    display: block;
+    margin-top: 1%;
+    font-size: 1.5vw;
+}
+
+@media all and (max-width: 768px) {
+    .main__nasosy-description span {
+        font-size: 4vw;
+    }
+}
+
+.main__nasosy-description :last-child {
+    margin-top: 3%;
+}
+
+.main__nasosy-imgs {
+    width: 40%;
+    margin: 3% 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+    .main__nasosy-imgs {
+        width: 60%;
+        margin: 5% auto;
+        flex-direction: column;
+    }
+}
+
+.main__nasos-first-img {
+    width: 40%;
+}
+
+@media all and (max-width: 768px) {
+    .main__nasos-first-img {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.main__nasos-second-img {
+    width: 50%;
+}
+
+@media all and (max-width: 768px) {
+    .main__nasos-second-img {
+        width: 80%;
+        margin: auto;
+    }
+}
