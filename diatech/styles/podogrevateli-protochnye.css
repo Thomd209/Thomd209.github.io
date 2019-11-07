@@ -1,4 +1,5 @@
 .main__title {
+  margin: 15% auto 0 2.5%;
   font-size: 1.5vw;
   font-weight: normal;
   text-transform: uppercase;
@@ -7,12 +8,14 @@
 
 @media all and (max-width: 768px) {
   .main__title {
-    font-size: 5.5vw;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 4.5vw;
   }
 }
 
 .main__sub-title {
-  margin-top: 3%;
+  margin: 3% 2.5%;
   text-transform: uppercase;
   font-size: 1.3vw;
   font-weight: normal;
@@ -20,6 +23,7 @@
 
 @media all and (max-width: 768px) {
   .main__sub-title {
+    text-align: center;
     font-size: 4.5vw;
   }
 }
@@ -35,12 +39,13 @@
 
 @media all and (max-width: 768px) { 
   .main__title-section {
+    text-align: center;
     font-size: 4.5vw;
   }
 }
 .podogrevatel-protochnyi {
-  width: 80%;
-  margin-top: 3%;
+  width: 60%;
+  margin: 3% 1.75%;
   display: flex;
   justify-content: space-between;
 }
@@ -62,6 +67,7 @@
 @media all and (max-width: 768px) { 
   .podogrevatel-protochnyi__description {
     width: 100%;
+    text-align: center;
     font-size: 4vw;
   }
 }

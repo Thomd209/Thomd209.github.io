@@ -1,6 +1,6 @@
 @media all and (min-width: 769px) {
   .main__title {
-    margin-left: 1%;
+    margin: 15% auto 0 2.5%;
     font-size: 1.5vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -9,6 +9,8 @@
 
 @media all and (max-width: 768px) {
   .main__title {
+    margin-top: 10%;
+    text-align: center;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 5.5vw;
@@ -18,7 +20,7 @@
 .section-title {
   display: block;
   width: 30%;
-  margin: 3% auto;
+  margin: 3% auto 0 auto;
   font-size: 1.3vw;
   text-transform: uppercase;
   font-weight: normal;
@@ -26,13 +28,14 @@
 
 @media all and (max-width: 768px) {
   .section-title {
+    text-align: center;
     font-size: 5vw;
   }
 }
 
 .container {
   width: 60%;
-  margin: 3% 0;
+  margin: 0 2%;
   display: flex;
   justify-content: space-between;
 }
@@ -53,6 +56,7 @@
 
 @media all and (max-width: 768px) {
   .container__description {
+    text-align: center;
     font-size: 4vw;
   }
 }

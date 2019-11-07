@@ -1,4 +1,5 @@
 .main__title {
+  margin: 15% auto 0 2.5%;
   text-transform: uppercase;
   font-size: 1.5vw;
   font-weight: normal;
@@ -6,12 +7,14 @@
 
 @media all and (max-width: 768px) {
   .main__title {
-    font-size: 5vw;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 4.5vw;
   }
 }
 
 .main__sub-title {
-  margin-top: 3%;
+  margin: 3% 2.5%;
   text-transform: uppercase;
   font-size: 1.3vw;
   font-weight: normal;
@@ -19,13 +22,13 @@
 
 @media all and (max-width: 768px) {
   .main__sub-title {
-    font-size: 4vw;
+    font-size: 4.2vw;
   }
 }
 
 .podogrevateli-nakopitelnye {
-  width: 64%;
-  margin-right: 1%;
+  width: 50%;
+  margin-left: 2.5%;
   display: flex;
   justify-content: space-between;
 }
@@ -49,17 +52,23 @@
   .podogrevateli-nakopitelnye__description {
     width: 100%;
     margin-top: 3%;
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .podogrevateli-nakopitelnye__description table {
     width: 70%;
-    margin: auto;
+    margin-left: 10%;
   }
 }
 
 .podogrevateli-nakopitelnye__description table td {
   padding: 0.5em 0;
+}
+
+@media all and (max-width: 768px) {
+  .podogrevateli-nakopitelnye__description table td {
+    text-align: center;
+  }
 }
 
 .cell-text-center {

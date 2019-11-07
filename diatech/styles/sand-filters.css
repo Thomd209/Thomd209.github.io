@@ -1,5 +1,6 @@
 @media all and (min-width: 769px) {
   .main__title {
+    margin: 15% auto 0 2.5%;
     font-size: 1.5vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -8,6 +9,8 @@
 
 @media all and (max-width: 768px) {
   .main__title {
+    margin-top: 10%;
+    text-align: center;
     font-size: 6vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -46,28 +49,54 @@
 
 .filter__description-text {
   display: block;
-  margin-top: 5%;
+  font-size: 1.3vw;
+  margin: 2% 4.5%;
+}
+
+@media all and (max-width: 768px) {
+  .filter__description-text {
+    display: block;
+    text-align: center;
+    font-size: 4.1vw;
+    margin: 2% 4.5%;
+  }
 }
 
 .filter__list {
-  margin-top: 5%;
+  margin: 5% 4.5%;
   list-style-type: none;
+}
+
+@media all and (max-width: 768px) {
+  .filter__list {
+    text-align: center;
+    margin: 5% 4.5%;
+    list-style-type: none;
+  }
 }
 
 .filter__list li {
   margin-top: 2%;
+  font-size: 1.2vw;
+}
+
+@media all and (max-width: 768px) {
+  .filter__list li {
+    font-size: 4vw;
+  }
 }
 
 @media all and (min-width: 769px) {
   .filter__img {
     display: block;
-    width: 40%;
+    width: 35%;
+    margin-top: -3%;
   }
 }
 
 @media all and (max-width: 768px) {
   .filter__img {
-    width: 100%;
+    width: 80%;
     margin: 5% auto;
   }
 }

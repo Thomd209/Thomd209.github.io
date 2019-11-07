@@ -1,5 +1,6 @@
 @media all and (min-width: 769px) {
   .main__title {
+    margin: 15% auto 0 2.5%;
     font-size: 1.5vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -8,7 +9,9 @@
 
 @media all and (max-width: 768px) {
   .main__title {
-    font-size: 5.5vw;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 4.5vw;
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -39,7 +42,7 @@
 
 @media all and (min-width: 769px) {
   .filter img {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -54,13 +57,6 @@
   flex-basis: 60%;
 }
 
-.filter-center {
-  width: 100%;
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
 @media all and (min-width: 769px) {
   .filter-center img {
     display: block;
@@ -71,7 +67,7 @@
 @media all and (min-width: 769px) {
   .filter__description h4 {
     display: block;
-    margin-top: 5%;
+    margin: 2% 4.5%;
     font-size: 1.3vw;
     font-weight: normal;
   }
@@ -80,38 +76,48 @@
 @media all and (max-width: 768px) {
   .filter__description h4 {
     margin-top: 5%;
-    font-size: 5vw;
+    text-align: center;
+    font-size: 4.1vw;
     font-weight: normal;
   }
 }
 
 .filter__description span {
   display: block;
-  margin-top: 5%;
+  margin: 2% 4.5%;
   font-size: 1.2vw;
 }
 
 @media all and (max-width: 768px) {
   .filter__description span {
+    text-align: center;
     font-size: 4vw;
   }
 }
 
 .filter__description ul {
-  margin: 5% 0 0 0;
-  margin-top: 5%;
+  margin: 3% 4.5%;
   font-size: 1.2vw;
   list-style-type: none;
 }
 
 @media all and (max-width: 768px) {
   .filter__description ul {
+    text-align: center;
     font-size: 4vw;
   }
 }
 
 .filter__description ul li {
   margin-top: 2%;
+}
+
+.filter__description-bottom h4 {
+  margin-left: 0%;
+}
+
+.filter__description-bottom ul {
+  margin-left: 0%;
 }
 
 .samples {
@@ -122,21 +128,21 @@
 
 @media all and (min-width: 769px) {
   .samples h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: normal;
   }
 }
 
 @media all and (max-width: 768px) {
   .samples h2 {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: normal;
   }
 }
 
 @media all and (min-width: 769px) {
   .samples img {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
   }
 }

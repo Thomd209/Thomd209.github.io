@@ -1,5 +1,6 @@
 @media all and (min-width: 769px) {
   .main__title {
+    margin: 15% auto 0 2.5%;
     font-size: 1.5vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -8,6 +9,8 @@
 
 @media all and (max-width: 768px) {
   .main__title {
+    margin-top: 10%;
+    text-align: center;
     font-size: 5vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -33,33 +36,30 @@
   flex-basis: 60%;
 }
 
-@media all and (min-width: 769px) {
-  .settings__description-span {
-    font-size: 1.2vw;
-  }
-  .settings__description-list {
-    font-size: 1.2vw;
-  }
+.settings__description span {
+  display: block;
+  margin: 3% 4.5%;
+  font-size: 1.2vw;
 }
 
 @media all and (max-width: 768px) {
-  .settings__description-span {
+  .settings__description span {
+    text-align: center;
     font-size: 4vw;
   }
-  .settings__description-list {
-    font-size: 4vw;
-  }
-}
-
-
-.settings__description span {
-  display: block;
-  margin-top: 5%;
 }
 
 .settings__description ul {
-  margin-top: 5%;
+  margin: 3% 4.5%;
+  font-size: 1.2vw;
   list-style-type: none;
+}
+
+@media all and (max-width: 768px) {
+  .settings__description ul {
+    text-align: center;
+    font-size: 4vw;
+  }
 }
 
 .settings__description li {
@@ -68,7 +68,7 @@
 
 @media all and (min-width: 769px) {
   .settings img {
-    width: 40%;
+    width: 30%;
     margin-top: -2%;
   }
 }

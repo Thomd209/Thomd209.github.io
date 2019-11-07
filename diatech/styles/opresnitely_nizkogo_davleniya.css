@@ -1,4 +1,6 @@
 .main__title {
+  margin: 15% auto 0 2.5%;
+  text-align: center;
   font-size: 1.5vw;
   font-weight: normal;
   text-transform: uppercase;
@@ -6,7 +8,8 @@
 
 @media all and (max-width: 768px) {
   .main__title {
-    font-size: 5vw;
+    margin: 10% auto 0 2.5%;
+    font-size: 4vw;
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -28,7 +31,7 @@ main h4 {
 
 .main-containers {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
 }
@@ -36,7 +39,7 @@ main h4 {
 .main__container  {
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 @media all and (max-width: 768px) {
