@@ -16,8 +16,12 @@
   .main__vodopodgotovka-elements {
     width: 80%;
     margin: auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-flow: row wrap;
   }
 
@@ -54,7 +58,10 @@
   .main__vodopodgotovka-elements {
     width: 80%;
     margin: auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }

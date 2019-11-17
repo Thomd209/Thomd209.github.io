@@ -20,14 +20,19 @@
 .pnevmo-barrels {
   width: 60%;
   margin-left: 2%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 @media all and (max-width: 768px) {
   .pnevmo-barrels {
     width: 100%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     text-align: center;
   }
@@ -60,7 +65,9 @@
 .pnevmo-barrels__imgs {
   width: 50%;
   margin-top: 3%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -68,7 +75,10 @@
   .pnevmo-barrels__imgs {
     width: 50%;
     margin: 3% auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }

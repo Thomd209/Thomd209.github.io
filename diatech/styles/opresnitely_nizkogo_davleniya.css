@@ -32,11 +32,15 @@ main h4 {
 .main-containers {
     width: 100%;
     margin-top: 0;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
 }
 
 .main__container  {
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
     margin-top: 3%;
@@ -44,7 +48,10 @@ main h4 {
 
 @media all and (max-width: 768px) {
   .main__container  {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     margin-top: 5%;
   }

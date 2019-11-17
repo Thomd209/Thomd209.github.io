@@ -29,7 +29,9 @@
 .podogrevateli-nakopitelnye {
   width: 50%;
   margin-left: 2.5%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -37,6 +39,8 @@
   .podogrevateli-nakopitelnye {
     width: 100%;
     margin-top: 3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }
@@ -79,7 +83,9 @@
 .podogrevateli-nakopitelnye__imgs {
   width: 50%;
   margin-top: 3%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -87,6 +93,8 @@
   .podogrevateli-nakopitelnye__imgs {
     width: 100%;
     margin-top: 3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 

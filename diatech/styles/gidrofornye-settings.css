@@ -20,7 +20,9 @@
 .gidrofornye-settings {
   width: 45%;
   margin-left: 0.5%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -28,6 +30,8 @@
   .gidrofornye-settings {
     width: 100%;
     margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }
@@ -66,7 +70,9 @@
 .gidrofornye-settings__imgs {
   width: 50%;
   margin-top: 3%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -74,7 +80,10 @@
   .gidrofornye-settings__imgs {
     width: 100%;
     margin-top: 3%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 

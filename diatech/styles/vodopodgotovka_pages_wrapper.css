@@ -14,6 +14,7 @@
     .vodopodgotovka__wrapper {
         width: 100vw;
         margin-top: 12%;
+        display: -webkit-box;
         display: flex;
         font-size: 1.2vw;
     }
@@ -23,7 +24,10 @@
     .vodopodgotovka__wrapper {
         width: 100%;
         text-align: center;
+        display: -webkit-box;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
     }
 }
@@ -63,6 +67,7 @@
 }
 
 main {
+    -webkit-box-flex: 0;
     flex: 0 0 70%;
     margin-top: 3%;
     position: relative;
@@ -77,6 +82,7 @@ main {
 
 @media all and (min-width: 769px) {
     .aside {
+        -webkit-box-flex: 0;
         flex: 0 0 30%;
         margin-left: 2.5%;
         font-size: 1.1em;

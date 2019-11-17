@@ -2,7 +2,6 @@
     margin-top: 15%;
     font-size: 2vw;
     text-align: center;
-    font-weight: normal;
 }
 
 @media all and (min-width: 551px) and (max-width: 768px)  {
@@ -23,7 +22,9 @@
 .vintovye-nasosy {
     width: 80%;
     margin: 5% auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -37,17 +38,25 @@
     .vintovye-nasosy {
         width: 80%;
         margin: 5% auto;
+        display: -webkit-box;
         display: flex;
+        -webkit-box-pack: justify;
         justify-content: space-between;
         flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
     }
 }
 
 .vintovoi-nosos {
     flex-basis: 48%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
 }
 
@@ -88,4 +97,20 @@
     .vintovoi-nasos__description {
         font-size: 2.5vw;
     }
+}
+
+.main__nasosnye-stancii-title {
+    margin-top: 5%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+@media all and (max-width: 768px) {
+    .main__nasosnye-stancii-title {
+        font-size: 3.5vw;
+    }
+}
+
+.nasosnaya-stanciya-title {
+    margin-top: 5%;
 }

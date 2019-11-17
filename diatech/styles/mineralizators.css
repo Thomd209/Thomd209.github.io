@@ -21,7 +21,9 @@
   .mineralizators {
     width: 50%;
     margin: 0% 2%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
 }
@@ -30,7 +32,10 @@
   .mineralizators {
     width: 100%;
     margin: 3% auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }

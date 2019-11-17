@@ -20,6 +20,7 @@
 @media all and (min-width: 769px) {
   .settings {
     width: 95%;
+    display: -webkit-box;
     display: flex;
   }
 }
@@ -27,7 +28,10 @@
 @media all and (max-width: 768px) {
   .settings {
     width: 100%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }

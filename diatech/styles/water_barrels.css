@@ -20,7 +20,9 @@
 .water_barrels {
   width: 70%;
   margin: 0 2%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -28,7 +30,10 @@
   .water_barrels {
     width: 100%;
     margin: 3% auto;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }
