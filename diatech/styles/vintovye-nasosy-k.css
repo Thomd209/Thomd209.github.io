@@ -117,8 +117,7 @@
 
 @media all and (max-width: 768px) {
     .main__values-list {
-        width: 80%;
-        margin: 5% auto;
+        margin: 5% 2.5%;
         display: -webkit-box;
         display: flex;
         -webkit-box-orient: vertical;
@@ -136,13 +135,8 @@
 }
 
 @media all and (max-width: 768px) {
-    .main__values-list li {
-        width: 100%;
-        margin: 0 auto 3% auto;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
+    .main__values-list li{
+        margin: 0 0 3% 0;
         font-size: 4vw;
     }
 }
