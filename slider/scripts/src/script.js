@@ -42,3 +42,21 @@ dotes[3].addEventListener('click', function() {
     slide_list.style.transform = 'translate(-75%)';
 });
 
+let btn_stop = document.querySelector('.stop-btn');
+
+function Run_slideshow() {
+    if (slide_counter === slides.length - 1) {
+        slide_list.style.transform = 'translate(0%)';
+        slide_counter = 0;
+    }
+    else {
+        slide_list.style.transform += 'translate(-25%)';
+        slide_counter++;
+    }
+}
+
+let timer_id = setInterval(Run_slideshow, 1500);
+
+btn_stop.addEventListener('click', function() {
+    clearInterval(timer_id);
+});
