@@ -56,13 +56,20 @@ body {
 
 .accordion__content {
     width: 90%;
-    display: none;
     margin-top: 3%;
     padding-left: 10px;
     text-align: justify;
     font-size: 1.3vw;
 }
 
+.accordion__content-display {
+    display: none;
+}
+
 .open {
     display: block;
+}
+
+.close {
+    display: none;
 }
