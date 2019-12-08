@@ -14,6 +14,8 @@ $(document).ready(function(){
       slidesToScroll: 1,
       arrows: true,
       autoplay: true,
+      prevArrow: "<span class='slider-partners__prev-arrow'><i class='fas fa-chevron-left'></i></span>",
+      nextArrow: "<span class='slider-partners__next-arrow'><i class='fas fa-chevron-right'></i></span>",
       responsive: [
         {
           breakpoint: 980,
