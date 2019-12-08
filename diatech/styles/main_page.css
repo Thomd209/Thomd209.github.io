@@ -312,8 +312,9 @@
   }
 
   @media all and (max-width: 768px) {
-    .news__left-block__text {
+    .news__left-block-text {
       margin: 3% 10%;
+      font-size: 3vw;
     }
   }
 
