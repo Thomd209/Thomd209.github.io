@@ -20,7 +20,19 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 501px) and (max-width: 768px) {
+    .top-slider {
+        margin-top: 20%;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 500px) {
+    .top-slider {
+        margin-top: 25%;
+    }
+}
+
+@media all and (max-width: 374px) {
     .top-slider {
         margin-top: 30%;
     }

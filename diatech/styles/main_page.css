@@ -67,6 +67,33 @@
     }
   }
 
+  .top-slider__prev-arrow, .top-slider__next-arrow {
+    position: absolute;
+    font-size: 2vw;
+    z-index: 10;
+    color: #fff;
+  }
+
+  @media all and (max-width: 768px) {
+    .top-slider__prev-arrow, .top-slider__next-arrow {
+      font-size: 4vw;
+    }
+  }
+
+  .top-slider__prev-arrow {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 5%;
+  }
+
+  .top-slider__next-arrow {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 5%;
+  }
+
   .separator {
     max-width: 95%;
     height: 3px;

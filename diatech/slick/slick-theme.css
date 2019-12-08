@@ -31,9 +31,7 @@
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
@@ -84,11 +82,11 @@
 }
 .slick-prev:before
 {
-    content: '\2039';
+    content: '';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '\2039';
+    content: '';
 }
 
 .slick-next
@@ -101,11 +99,11 @@
 }
 .slick-next:before
 {
-    content: '\203A';
+    content: '';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '\203A';
+    content: '';
 }
 
 /* Dots */

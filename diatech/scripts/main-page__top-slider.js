@@ -3,6 +3,8 @@ $(document).ready(function(){
       dots: true,
       autoplay: true,
       autoplaySpeed: 3000,
+      prevArrow: "<span class='top-slider__prev-arrow'><i class='fas fa-chevron-left'></i></span>",
+      nextArrow: "<span class='top-slider__next-arrow'><i class='fas fa-chevron-right'></i></span>",
   });
 });
 
