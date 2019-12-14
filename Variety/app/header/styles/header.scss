@@ -1,10 +1,156 @@
-$red-color: #e74c3c;
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Myriad Pro",Helvetica, Arial, sans-serif;
 }
 
-@media screen and (max-width: 768px){
+    .header {
+        width: 100%;
+        padding-bottom: 20vh;
+        background: url("../../../../Variety template/app/header/img/header.png") no-repeat center;
+        background-size: cover;
+        text-align: center;
+
+        /*.header__btn {
+            padding: .5em 1em;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5%;
+            background: #e74c3c;
+            border: 6px solid rgba(241,150,140,0.50);
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.3vw;
+        }*/
+
+    }
+
+    .header__top-container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header__logo {
+        font-size: 3vw;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .header__mobile-icon {
+        position: absolute;
+        right: 0px;
+        color: #fff;
+        font-size: 3vw;
+
+        @media all and (min-width: 769px) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    .header__menu {
+
+        @media all and (max-width: $breakpoint-mobile) {
+            & {
+                width: 80%;
+                position: absolute;
+                top: 1vw;
+                right: -4%;
+            }
+        }
+
+        .header__menu-list {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding-left: 0;
+
+            @media all and (max-width: $breakpoint-mobile) {
+                & {
+                    text-align: right;
+                }
+            }
+
+            .header__menu-item {
+                list-style-type: none;
+                margin-right: 1em;
+                padding: 0;
+
+                @media all and (max-width: $breakpoint-mobile) {
+                    &  {
+                        margin: 5px 0 0 0;
+                    }
+                    
+                }
+
+                .header__menu-link {
+                    font-size: 2.5vw;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $red-color;
+                        transition: color .5s;
+                    }
+                }
+
+                .header__menu-link-underground {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+        }
+
+    }
+
+    .header__bottom-container {
+        width: 80%;
+        margin: auto;
+        transform: translateY(30%);
+
+        .header__title {
+            color: #fff;
+            font-size: 6vw;
+        }
+
+        @media all and (max-width: $breakpoint-mobile) {
+            .header__title {
+                padding-top: 30px;
+            }
+        }
+
+        .header__line {
+            height: 1px;
+            margin: 0px auto 20px;
+            background-color: #fff;
+        }
+
+        .header__design-kinds {
+            display: block;
+            color: #fff;
+            font-size: 2vw;
+        }
+
+        .header__btn {
+            margin: auto;
+            transform: translateY(100%);
+            padding: .5em 1em;
+            background: #e74c3c;
+            border: 6px solid rgba(241,150,140,0.50);
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.3vw;
+        } 
+    }
+
+
+
+/*@media screen and (max-width: 768px){
     .top-header__top-menu-mobile {
         width: 40%;
         height: 500px;
@@ -402,4 +548,4 @@ body {
     
       
 
-}
+}*/

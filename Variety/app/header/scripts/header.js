@@ -10,8 +10,8 @@ window.addEventListener('scroll', function(){
 });
 
 
-$('.top-header__mobile-menu-btn').click(function(){
-    $('.top-header__mobile-menu').slideToggle(1000);
+$('.header__mobile-icon').click(function(){
+    $('.header__menu').slideToggle(1000);
 });
 
 

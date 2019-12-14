@@ -5,11 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Variety template</title>
-    <link rel="stylesheet" type="text/css" href="common-styles/normalize.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link rel="stylesheet" href="common-styles/normalize.css">
     <link rel="stylesheet" href="common-styles/style.css">
+    <link rel="stylesheet" href="common-styles/animate.css">
 </head>
 <body>
-    <header class="top-header__top-block-mobile">
+    <header class="header">
+        <section class="header__top-container">
+            <span class="header__logo">logo</span>
+            <a class="header__mobile-icon">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link-underground" href="#">start</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">about me</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">work</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <div class="header__bottom-container">
+            <h2 class="header__title animated zoomIn">May I introduce myself?</h2>
+            <div class="header__line animated zoomIn"></div>
+            <span class="header__design-kinds animated zoomIn">Frontend Design | UI/UX Design</span>
+            <button class="header__btn animated fadeIn">go ahead</button>
+        </div>
+    </header>
+    <!--<div class="top-header__top-block-mobile">
         <span class="top-header__mobile-logo">logo</span>
         <div class="top-header__mobile-menu-btn">
             <span class="top-header__mobile-menu-btn-span top-header__mobile-menu-btn-span-1"></span>
@@ -32,7 +64,7 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </div>
     <header class="top-header">
         <nav class="top-header__menu-desktop">
             <span class="top-header__desktop-logo">logo</span>
@@ -57,7 +89,7 @@
             <div class="top-header__btn">
                 <span class="top-header__btn-text">go ahead</span>
             </div>
-    </header>
+    </header>-->
     <main>
         <article class="about">
             <h2 class="about__title">raphael lechner</h2>
@@ -66,19 +98,19 @@
             Maiores doloribus facilis nostrum necessitatibus assumenda quam obcaecati labore eaque velit eum. Ipsa sit at, ad officia minima vitae, odio autem ratione amet quis cum culpa, ipsum incidunt natus? Aut!</p>
             <article class="skills about__skills">
                 <section class="about__skills-item">
-                    <img src="About_me/img/sketching.png" alt="sketching" class="about__img">
+                    <img src="About me/img/sketching.png" alt="sketching" class="about__img">
                     <h3 class="about__skills-title">Sketching is Fun</h3>
                     <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
                     </p>
                 </section>
                 <section class="about__skills-item">
-                    <img src="About_me/img/design.png" alt="" class="about__img">
+                    <img src="About me/img/design.png" alt="" class="about__img">
                     <h3 class="about__skills-title">Design Afterwards</h3>
                     <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
                     </p>
                 </section>
                 <section class="about__skills-item">
-                    <img src="About_me/img/finalize.png" alt="" class="about__img">
+                    <img src="About me/img/finalize.png" alt="" class="about__img">
                     <h3 class="about__skills-title">Finalize</h3>
                     <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
                     </p>
