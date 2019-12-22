@@ -160,26 +160,26 @@ body {
   background: url("../../../../Variety template/app/header/img/header.png") no-repeat center;
   background-size: cover;
   text-align: center; }
-  .banner .header__title {
+  .banner .banner__title {
     color: #fff;
     font-size: 5vw; }
     @media (max-width: 768px) {
-      .banner .header__title {
+      .banner .banner__title {
         font-size: 8vw;
         padding-top: 30px; } }
-  .banner .header__line {
+  .banner .banner__line {
     width: 80%;
     height: 1px;
     margin: 0px auto 20px;
     background-color: #fff; }
-  .banner .header__design-kinds {
+  .banner .banner__design-kinds {
     display: block;
     color: #fff;
     font-size: 3vw; }
     @media (max-width: 768px) {
-      .banner .header__design-kinds {
+      .banner .banner__design-kinds {
         font-size: 5vw; } }
-  .banner .header__btn {
+  .banner .banner__btn {
     width: 40%;
     padding: 20px 0;
     margin: 50px auto 0;
@@ -191,7 +191,7 @@ body {
     text-transform: uppercase;
     font-size: 2vw; }
     @media (max-width: 768px) {
-      .banner .header__btn {
+      .banner .banner__btn {
         padding: 10px 0;
         font-size: 2.5vw; } }
 
