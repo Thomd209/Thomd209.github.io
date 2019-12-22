@@ -34,8 +34,7 @@ body {
     @media (max-width: $breakpoint-mobile) {
         .change__container {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            position: relative;
         }
     }
 
@@ -107,11 +106,12 @@ body {
     }
 
     .change__burger-icon {
-        left: 86%;
+        position: absolute;
+        right: 10%;
     }
 
     .move-up__burger-icon {
-        transform: translateY(-10px);
+        transform: translateY(-13px);
     }
 
     .change__burger-icon-item-1 {
