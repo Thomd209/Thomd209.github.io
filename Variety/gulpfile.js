@@ -1,19 +1,41 @@
 let gulp = require("gulp");
-let sass = require("gulp-sass");
-let browserSync = require("browser-sync");
-let autoprefixer = require("gulp-autoprefixer");
-let imgmin = require("gulp-imagemin");
 let htmlmin = require("gulp-htmlmin");
 let cssmin = require("gulp-cssmin");
+let concat = require("gulp-concat");
 let jsmin = require("gulp-uglify");
+let imgmin = require("gulp-imagemin");
 
-gulp.task('sass', function () {
-    gulp.src('app/common-styles/style.scss')
-    .pipe(sass())
-    .pipe(autoprefixer({ cascade: true }))
-    .pipe(gulp.dest('app/common-styles/'))
+gulp.task("unite", function (done) {
+    gulp.src('app/*/*/*.js')
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest('dist/scripts/'));
+    done();
 });
 
-gulp.task('watch', gulp.parallel('sass', function () {
-    gulp.watch('app/common-styles/style.scss', gulp.parallel('sass'));
-}));
+gulp.task("jsmin", function (done) {
+    gulp.src("dist/scripts/")
+    .pipe(jsmin())
+    .pipe(gulp.dest("dist/scripts/"))
+    done();
+});
+
+gulp.task("cssmin", function (done) {
+    gulp.src("app/common_files/styles/*.css")
+    .pipe(cssmin())
+    .pipe(gulp.dest("dist/styles/"))
+    done();
+});
+
+gulp.task("htmlmin", function (done) {
+    gulp.src("index.html")
+    .pipe(htmlmin())
+    .pipe(gulp.dest("../Variety template/"))
+    done();
+});
+
+gulp.task("imgmin", function (done) {
+    gulp.src("app/*/*/*.png")
+    .pipe(imgmin())
+    .pipe(gulp.dest("dist/img/"))
+    done();
+});

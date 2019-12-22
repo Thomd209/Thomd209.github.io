@@ -2,206 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Variety template</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-    <link rel="stylesheet" href="app/common-styles/normalize.css">
-    <link rel="stylesheet" href="app/common-styles/style.css">
-    <link rel="stylesheet" href="app/common-styles/animate.css">
+    <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link rel="stylesheet" href="dist/styles/normalize.css">
+    <link rel="stylesheet" href="dist/styles/style.css">
+    <link rel="stylesheet" href="dist/styles/animate.css">
 </head>
 <body>
     <header class="header">
-        <section class="header__top-container">
+        <div class="header__container">
             <span class="header__logo">logo</span>
-            <a class="header__mobile-icon">
-                <i class="fas fa-bars"></i>
-            </a>
+            <div class="header__burger-icon">
+                <span class="header__burger-icon-item"></span>
+                <span class="header__burger-icon-item"></span>
+                <span class="header__burger-icon-item"></span>
+            </div>
             <nav class="header__menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a class="header__menu-link header__menu-link-underground" href="#">start</a>
+                        <a href="#start" class="header__menu-link header__menu-link-underground">start</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">about me</a>
+                        <a class="header__menu-link" href="#about">about me</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">work</a>
+                        <a class="header__menu-link" href="#work">work</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">contact</a>
+                        <a class="header__menu-link" href="#contact">contact</a>
                     </li>
                 </ul>
             </nav>
-        </section>
-        <div class="header__bottom-container">
+        </div>
+    </header>
+    <main>
+        <section class="banner" id="start">
             <h2 class="header__title animated zoomIn">May I introduce myself?</h2>
             <div class="header__line animated zoomIn"></div>
             <span class="header__design-kinds animated zoomIn">Frontend Design | UI/UX Design</span>
             <button class="header__btn animated fadeIn">go ahead</button>
+        </section>
+        <div class="container">
+            <article class="about" id="about">
+                <article class="about__text-container">
+                    <h2 class="about__title animated fadeIn">raphael lechner</h2>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
+                    Hic dolore corrupti ea excepturi odit officia id nemo modi, perspiciatis voluptatibus rerum sequi. Veniam nam cum, fugit odit facilis quasi nesciunt totam eum iusto sit at illum ipsa esse!
+                    Maiores doloribus facilis nostrum necessitatibus assumenda quam obcaecati labore eaque velit eum. Ipsa sit at, ad officia minima vitae, odio autem ratione amet quis cum culpa, ipsum incidunt natus? Aut!</p>
+                </article>
+                <article class="skills about__skills">
+                    <section class="about__skills-item animated" style="animation-delay: 0.7s;">
+                        <img src="dist/img/About_me/img/sketching.png" alt="sketching" class="about__img">
+                        <h3 class="about__skills-title">Sketching is Fun</h3>
+                        <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
+                        </p>
+                    </section>
+                    <section class="about__skills-item animated" style="animation-delay: 1.4s;">
+                        <img src="dist/img/About_me/img/design.png" alt="" class="about__img">
+                        <h3 class="about__skills-title">Design Afterwards</h3>
+                        <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
+                        </p>
+                    </section>
+                    <section class="about__skills-item animated" style="animation-delay: 2.1s;">
+                        <img src="dist/img/About_me/img/finalize.png" alt="" class="about__img">
+                        <h3 class="about__skills-title">Finalize</h3>
+                        <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
+                        </p>
+                    </section>
+                </article>
+            </article>
         </div>
-    </header>
-    <!--<div class="top-header__top-block-mobile">
-        <span class="top-header__mobile-logo">logo</span>
-        <div class="top-header__mobile-menu-btn">
-            <span class="top-header__mobile-menu-btn-span top-header__mobile-menu-btn-span-1"></span>
-            <span class="top-header__mobile-menu-btn-span top-header__mobile-menu-btn-span-2"></span>
-            <span class="top-header__mobile-menu-btn-span top-header__mobile-menu-btn-span-3"></span>
+        <div class="container">
+            <article class="portfolio" id="work">
+                <div class="portfolio__border-top"></div>
+                <div class="works portfolio__works">
+                    <div class="portfolio__work" style="animation-delay: 0.7s;">
+                        <img src="dist/img/Portfolio/img/statue.png" alt="statue" class="portfolio__img">
+                        <div class="portfolio__search">
+                            <img src="dist/img/Portfolio/img/icon-magnifier.png" alt="search">
+                        </div>
+                        <div class="portfolio__work-description">
+                            <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
+                            <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__work" style="animation-delay: 1.4s;">
+                        <img src="dist/img/Portfolio/img/sunset.png" alt="sunset" class="portfolio__img">
+                        <div class="portfolio__search">
+                            <img src="dist/img/Portfolio/img/icon-magnifier.png" alt="search">
+                        </div>
+                        <div class="portfolio__work-description">
+                            <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
+                            <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__work" style="animation-delay: 2.1s;">
+                        <img src="dist/img/Portfolio/img/flowers.png" alt="flowers" class="portfolio__img">
+                        <div class="portfolio__search">
+                            <img src="dist/img/Portfolio/img/icon-magnifier.png" alt="search">
+                        </div>
+                        <div class="portfolio__work-description">
+                            <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
+                            <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__work" style="animation-delay: 2.8s;">
+                        <img src="dist/img/Portfolio/img/people.png" alt="people" class="portfolio__img">
+                        <div class="portfolio__search">
+                            <img src="dist/img/Portfolio/img/icon-magnifier.png" alt="search" class="portfolio__img-search">
+                        </div>
+                        <div class="portfolio__work-description">
+                            <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
+                            <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__btn" style="animation-delay: 0.7s;">
+                    <div class="portfolio__btn-block-inner">
+                        <span class="portfolio__btn-title">view more</span>
+                        <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </article>
         </div>
-        <nav class="top-header__mobile-menu">
-            <ul class="top-header__list-mobile">
-                <li class="top-header__list-item-mobile">
-                    <a href="#" class="top-header__list-link-mobile top-header__list-link-active">start</a>
-                </li>
-                <li class="top-header__list-item-mobile">
-                    <a href="#" class="top-header__list-link-mobile">about me</a>
-                </li>
-                <li class="top-header__list-item-mobile">
-                    <a href="#" class="top-header__list-link-mobile">work</a>
-                </li>
-                <li class="top-header__list-item-mobile">
-                    <a href="#" class="top-header__list-link-mobile">contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <header class="top-header">
-        <nav class="top-header__menu-desktop">
-            <span class="top-header__desktop-logo">logo</span>
-            <ul class="top-header__list-desktop">
-                <li class="top-header__list-item-desktop">
-                    <a href="#" class="top-header__list-link-desktop top-header__list-link-active">start</a>
-                </li>
-                <li class="top-header__list-item-desktop">
-                    <a href="#" class="top-header__list-link-desktop">about me</a>
-                </li>
-                <li class="top-header__list-item-desktop">
-                    <a href="#" class="top-header__list-link-desktop">work</a>
-                </li>
-                <li class="top-header__list-item-desktop">
-                    <a href="#" class="top-header__list-link-desktop">contact</a>
-                </li>
-            </ul>
-        </nav>
-        <h1 class="top-header__h1">May I introduce myself?</h1>
-        <div class="top-header__divider"></div>
-        <h2 class="top-header__h2">Frontend Design | UI/UX Design</h2>
-            <div class="top-header__btn">
-                <span class="top-header__btn-text">go ahead</span>
-            </div>
-    </header>-->
-    <main>
-        <article class="about">
-            <h2 class="about__title">raphael lechner</h2>
-            <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
-            Hic dolore corrupti ea excepturi odit officia id nemo modi, perspiciatis voluptatibus rerum sequi. Veniam nam cum, fugit odit facilis quasi nesciunt totam eum iusto sit at illum ipsa esse!
-            Maiores doloribus facilis nostrum necessitatibus assumenda quam obcaecati labore eaque velit eum. Ipsa sit at, ad officia minima vitae, odio autem ratione amet quis cum culpa, ipsum incidunt natus? Aut!</p>
-            <article class="skills about__skills">
-                <section class="about__skills-item">
-                    <img src="app/About me/img/sketching.png" alt="sketching" class="about__img">
-                    <h3 class="about__skills-title">Sketching is Fun</h3>
-                    <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
-                    </p>
-                </section>
-                <section class="about__skills-item">
-                    <img src="app/About me/img/design.png" alt="" class="about__img">
-                    <h3 class="about__skills-title">Design Afterwards</h3>
-                    <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
-                    </p>
-                </section>
-                <section class="about__skills-item">
-                    <img src="app/About me/img/finalize.png" alt="" class="about__img">
-                    <h3 class="about__skills-title">Finalize</h3>
-                    <p class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
-                    </p>
+        <div class="container">
+            <article class="contact" id="contact">
+                <div class="contact__border-top"></div>
+                <h2 class="contact__title">Get in touch!</h2>
+                <section class="form">
+                    <form action="" method="POST">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__name contact__form-elem">
+                            <input type="email" placeholder="Email" class="contact__email contact__form-elem">
+                        </div>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="How can I help you" class="contact__message contact__form-elem"></textarea>
+                        <a href="#" class="contact__btn">send</a>
+                    </form>
                 </section>
             </article>
-        </article>
-        <article class="portfolio">
-            <div class="portfolio__border-top"></div>
-            <div class="works portfolio__works">
-                <div class="portfolio__work">
-                    <img src="app/portfolio/img/statue.png" alt="statue" class="portfolio__img">
-                    <div class="portfolio__search">
-                        <img src="app/portfolio/img/icon-magnifier.png" alt="search">
-                    </div>
-                    <div class="portfolio__work-description">
-                        <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
-                        <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
-                    </div>
-                </div>
-                <div class="portfolio__work">
-                    <img src="app/portfolio/img/sunset.png" alt="sunset" class="portfolio__img">
-                    <div class="portfolio__search">
-                        <img src="app/portfolio/img/icon-magnifier.png" alt="search">
-                    </div>
-                    <div class="portfolio__work-description">
-                        <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
-                        <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
-                    </div>
-                </div>
-                <div class="portfolio__work">
-                    <img src="app/portfolio/img/flowers.png" alt="flowers" class="portfolio__img">
-                    <div class="portfolio__search">
-                        <img src="app/portfolio/img/icon-magnifier.png" alt="search">
-                    </div>
-                    <div class="portfolio__work-description">
-                        <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
-                        <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
-                    </div>
-                </div>
-                <div class="portfolio__work">
-                    <img src="app/portfolio/img/people.png" alt="people" class="portfolio__img">
-                    <div class="portfolio__search">
-                        <img src="app/portfolio/img/icon-magnifier.png" alt="search" class="portfolio__img-search">
-                    </div>
-                    <div class="portfolio__work-description">
-                        <span class="portfolio__work-description-title">Lorem ipsum dolor sit</span>
-                        <span class="portfolio__work-description-text">amet consectetur adipisicing elit</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio__btn">
-                <div class="portfolio__btn-block-inner">
-                    <span class="portfolio__btn-title">view more</span>
-                    <img src="app/portfolio/img/arrow.png" alt="arrow" class="portfolio__btn-img">
-                    <img src="app/portfolio/img/arrow-red.png" alt="arrow" class="portfolio__btn-img-red">
-                </div>
-            </div>
-        </article>
-        <article class="contact">
-            <div class="contact__border-top"></div>
-            <h2 class="contact__title">Get in touch!</h2>
-            <section class="form">
-                <form action="" method="POST">
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__name contact__form-elem">
-                        <input type="email" placeholder="Email" class="contact__email contact__form-elem">
-                    </div>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="How can I help you" class="contact__message contact__form-elem"></textarea>
-                </form>
-            </section>
-        </article>
+        </div>
     </main>
     <footer>
-        <article class="footer__social-networks">
-            <section class="footer__social-network footer__twitter">
-                <img src="app/Footer/img/twitter.png" alt="Twitter">
-            </section>
-            <section class="footer__social-network footer__dribble">
-                <img src="app/Footer/img/dribbble.png" alt="Dribble">
-            </section>
-            <section class="footer__social-network footer__facebook">
-                <img src="app/Footer/img/facebook.png" alt="Facebook" class="footer__img-fb">
-            </section>
-        </article>
-        <h3 class="footer__text-left">&copy; Raphael Lechner</h3>
-        <span class="footer__text-right">Imprint</span>
+        <div class="container">
+            <article class="footer__social-networks">
+                <section class="footer__social-network footer__twitter">
+                    <img src="dist/img/Footer/img/twitter.png" alt="Twitter">
+                </section>
+                <section class="footer__social-network footer__dribble">
+                    <img src="dist/img/Footer/img/dribbble.png" alt="Dribble">
+                </section>
+                <section class="footer__social-network footer__facebook">
+                    <img src="dist/img/Footer/img/facebook.png" alt="Facebook" class="footer__img-fb">
+                </section>
+            </article>
+            <div class="footer__text-container">
+                <span class="footer__text">&copy; Raphael Lechner</span>
+                <span class="footer__text">Imprint</span>
+            </div>
+        </div>
     </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script src="app/header/scripts/header.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="dist/scripts/script.js"></script>
 </body>
 </html>

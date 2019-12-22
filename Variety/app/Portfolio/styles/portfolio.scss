@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px){
+@media (max-width: 992px){
     .portfolio {
         width: 100%;
     }
@@ -171,171 +171,164 @@
         display: block;
      }
     
+}
+
+
+@media (min-width: 993px){
+    .portfolio__border-top {
+        width: 80%;
+        height: 1px;
+        margin: 75px auto;
+        background: #e4e8e8;
     }
 
+    .works {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-content: space-between;
+    }
 
-@media screen and (min-width: 993px){
+    .portfolio__works {
+        width: 900px;
+        margin: 74px auto;
+    }
 
-.portfolio {
-    width: 100%;
-}
+    .portfolio__work {
+        width: 45%;
+        margin-bottom: 30px;
+        position: relative;
+    }
 
-.portfolio__border-top {
-    width: 80%;
-    height: 1px;
-    margin: 75px auto;
-    background: #e4e8e8;
-}
-
-.works {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-content: space-between;
-}
-
-.portfolio__works {
-    width: 900px;
-    margin: 74px auto;
-}
-
-.portfolio__work {
-    width: 45%;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.portfolio__search {
-    position: absolute;
-    right: 7%;
-    top: 26px;
-    width: 10.2%;
-    height: 38px;
-    background: $red-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-}
-
-.portfolio__work-description {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    width: 98.8%;
-    height: 90px;
-    background: $red-color;
-
-    .portfolio__work-description-title {
+    .portfolio__search {
         position: absolute;
-        left: 1.7%;
-        top: 23px;
-        color: #fff;
-        font-size: 17px;
-    }
-
-    .portfolio__work-description-text {
-        position: absolute;
-        left: 1.7%;
-        top: 55px;
-        color: #9d3b31;
-        font-size: 10px;
-    }
-}
-
-.portfolio__work {
-
-    &:hover {
-        cursor: pointer;
-    }
-    
-    &:hover .portfolio__work-description {
-        display: block;
-    }
-    
-    &:hover .portfolio__search {
-        opacity: 1;
-    }
-}
-
-.portfolio__btn {
-    width: 500px;
-    height: 100px;
-    margin: 75px auto;
-    background: $red-color;
-    color: #fff;
-    text-transform: uppercase;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    .portfolio__btn-title {
-        display: block;
-    }
-
-    .portfolio__btn-img {
-        width: 4vw;
-        margin-left: 10px;
-    }
-
-    .portfolio__btn-block-inner {
-        width: 70%;
-        margin: 0 auto;
-        font-size: 4vw;
+        right: 7%;
+        top: 26px;
+        width: 10.2%;
+        height: 38px;
+        background: $red-color;
         display: flex;
         justify-content: center;
         align-items: center;
+        opacity: 0;
     }
 
-    @media screen and (min-width: 1244px) and (max-width: 1933px){
-        .portfolio__btn-block-inner {
-            font-size: 2.5vw;
+    .portfolio__work-description {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        width: 98.8%;
+        height: 90px;
+        background: $red-color;
+
+        .portfolio__work-description-title {
+            position: absolute;
+            left: 1.7%;
+            top: 23px;
+            color: #fff;
+            font-size: 17px;
+        }
+
+        .portfolio__work-description-text {
+            position: absolute;
+            left: 1.7%;
+            top: 55px;
+            color: #9d3b31;
+            font-size: 10px;
+        }
+
+    }
+
+    .portfolio__work {
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover .portfolio__work-description {
+            display: block;
+        }
+
+        &:hover .portfolio__search {
+            opacity: 1;
+        }
+    }
+
+    .portfolio__btn {
+        width: 218px;
+        height: 57px;
+        margin: 75px auto;
+        background: $red-color;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .portfolio__btn-title {
+            display: block;
         }
 
         .portfolio__btn-img {
-            width: 3vw;
-        }
-    }
-
-    @media screen and (min-width: 1934px) and (max-width: 2318px){
-        .portfolio__btn {
-            height: 100px;
+            width: 4vw;
+            margin-left: 10px;
         }
 
         .portfolio__btn-block-inner {
-            font-size: 1.8vw;
-        }
-    }
-
-    @media screen and (min-width: 2319px) and (max-width: 2560px){
-        .portfolio__btn {
-            width: 700px;
-        }
-
-        .portfolio__btn-block-inner {
-            font-size: 1.5vw;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 23px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .portfolio__btn-img {
-            width: 2vw;
+        /*@media screen and (min-width: 1244px) and (max-width: 1933px){
+            .portfolio__btn-block-inner {
+                font-size: 2.5vw;
+            }
+
+            .portfolio__btn-img {
+                width: 3vw;
+            }
         }
-    }
+
+        @media screen and (min-width: 1934px) and (max-width: 2318px){
+            .portfolio__btn {
+                height: 100px;
+            }
+
+            .portfolio__btn-block-inner {
+                font-size: 1.8vw;
+            }
+        }
+
+        @media screen and (min-width: 2319px) and (max-width: 2560px){
+            .portfolio__btn {
+                width: 700px;
+            }
+
+            .portfolio__btn-block-inner {
+                font-size: 1.5vw;
+            }
+
+            .portfolio__btn-img {
+                width: 2vw;
+            }
+        }
 
 
         .portfolio__btn-img-red {
             display: none;
             width: 3vw;
         
-        }
-
-    
-}
+        }*/
 
 
-
+    }
 }
 
