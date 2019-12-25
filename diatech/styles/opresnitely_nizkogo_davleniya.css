@@ -1,6 +1,6 @@
 .main__title {
-  margin: 15% auto 0 2.5%;
-  text-align: center;
+  margin: 15% 0 0 2.5%;
+  text-align: left;
   font-size: 1.5vw;
   font-weight: normal;
   text-transform: uppercase;
@@ -8,7 +8,8 @@
 
 @media all and (max-width: 768px) {
   .main__title {
-    margin: 10% auto 0 2.5%;
+    margin: 10% auto 0 auto;
+    text-align: center;
     font-size: 4vw;
     font-weight: normal;
     text-transform: uppercase;
@@ -18,20 +19,21 @@
 main h4 {
     display: block;
     margin-top: 3%;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
     font-size: 1.3vw;
 }
 
 @media all and (max-width: 768px) {
   main h4 {
+    text-align: center;
     font-size: 4.5vw;
   }
 }
 
 .main-containers {
     width: 100%;
-    margin-top: 0;
+    margin-left: 2.5%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -39,14 +41,16 @@ main h4 {
     flex-direction: column;
 }
 
-.main__container  {
+@media (min-width: 769px) {
+  .main__container  {
+    width: 45%;
     display: -webkit-box;
     display: flex;
-    justify-content: space-around;
-    margin-top: 3%;
+    margin-top: 0% 0 0 -0.2%;
+  }
 }
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
   .main__container  {
     display: -webkit-box;
     display: flex;
@@ -57,10 +61,37 @@ main h4 {
   }
 }
 
-@media all and (min-width: 769px) {
+@media (min-width: 769px) {
+  .main__table {
+    margin: 5% 0 0 -0.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__table {
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .main__table td {
+    padding: 0.5em 0.5em 0.5em 0;
+    font-size: 1.2vw;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__table td {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 769px) {
   .main__container img {
-    width: 40%;
-    display: block;
+    margin-left: 5%;
   }
 }
 
@@ -72,60 +103,25 @@ main h4 {
   }
 }
 
-@media all and (max-width: 768px) {
-  .main__table {
-    margin: auto;
-  }
-}
-
-.main__mechanical-perfomance .main__table {
-  margin-top: 6%;
-}
-
 .main__mechanical-perfomance img {
-  width: 30%;
-}
-
-.main__mini-perfomance .main__table {
-  margin-top: 2%;
+  width: 40%;
 }
 
 .main__mini-perfomance img {
-  width: 30%;
-}
-
-.main__big-perfomance .main__table {
-  margin-top: 1.5%;
+  width: 40%;
 }
 
 .main__big-perfomance img {
-  width: 30%;
-}
-
-.main__additional-performance {
-  margin-left: 3%;
+  width: 40%;
 }
 
 .main__additional-performance img {
   width: 40%;
-  margin-top: 1.5%;
+  margin: 1.5% 0 0 10%;
 }
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
   .main__additional-performance img {
     width: 90%!important;
-  }
-}
-
-.main__table td {
-    padding: 0.5em;
-    font-size: 1.2vw;
-    text-align: left;
-}
-
-@media all and (max-width: 768px) {
-  .main__table td {
-    text-align: center;
-    font-size: 4vw;
   }
 }
