@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app/styles/style.css">
+    <title>ToDo list</title>
+</head>
+<body>
+    <div class="app">
+        <div class="app__header">
+            <span class="app__title">To Do List</span>
+            <div class="infoTasks-container">
+                <div class="app__all-tasks-block">
+                    <span class="app__info-text">All tasks:</span>
+                    <span class="app__info-text tasks-number">0</span>
+                </div>
+                <div class="app__delete-all-tasks">
+                    <span class="app__info-text delete-all-tasks">Delete all tasks</span>
+                </div>
+                <div class="app__done-tasks-block">
+                    <span class="app__info-text">Done tasks:</span>
+                    <span class="app__info-text done-tasks">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="app__body">
+            <input type="text" class="app__create-task-input" placeholder="Add new task">
+            <button class="app__create-task-btn">Add task</button>
+        </div>
+        <div class="app__footer">
+            <ul class="app__tasks_list">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="app/scripts/script.js"></script>
+</body>
+</html>
