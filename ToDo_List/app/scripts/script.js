@@ -31,9 +31,7 @@ tasksList.addEventListener("click", (e) => {
     if (e.target.classList.contains("app__delete-btn")) {
         e.target.parentElement.remove();
         tasksNumber.innerHTML = +tasksNumber.innerHTML - 1;
-        if (doneTasks.innerHTML === "0") {
-            doneTasks.innerHTML = "0";
-        } else {
+        if (e.target.previousElementSibling.classList.contains("make-task")) {
             doneTasks.innerHTML = +doneTasks.innerHTML - 1;
         }
     } 
