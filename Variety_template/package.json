@@ -16,7 +16,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "scripts": {
-    "change": "babel dist/scripts/ -d dist/ --presets es2015"
+    "change": "babel dist/scripts/ -d dist/scripts/ --presets es2015"
   },
   "author": "",
   "license": "ISC"

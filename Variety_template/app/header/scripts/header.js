@@ -25,6 +25,14 @@ $(window).scroll(function () {
     }
 });
 
+$(".header__menu-link").click(function () {
+    let id  = $(this).attr("href");
+    let top = $(id).offset().top;
+    $("body, html").animate({scrollTop: top}, 1500);
+});
+
+
+
 
 
 
