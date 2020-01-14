@@ -6,7 +6,7 @@ let jsmin = require("gulp-uglify");
 let imgmin = require("gulp-imagemin");
 
 gulp.task("unite", function (done) {
-    gulp.src('app/*/*/*.js')
+    gulp.src(['app/**/*.js', '!app/common_files/scripts/plugin_waypoints_js/jquery.waypoints.min.js'])
     .pipe(concat('script.js'))
     .pipe(gulp.dest('dist/scripts/'));
     done();

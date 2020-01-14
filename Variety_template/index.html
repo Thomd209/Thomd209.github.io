@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container" id="header">
             <span class="header__logo">logo</span>
             <div class="header__burger-icon">
                 <span class="header__burger-icon-item"></span>
@@ -22,10 +22,10 @@
             <nav class="header__menu" id="menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a href="#start" class="header__menu-link header__menu-link-underground">start</a>
+                        <a class="header__menu-link header__menu-link-underground" href="#start">start</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#about">about me</a>
+                        <a class="header__menu-link" id="link_about" href="#about">about me</a>
                     </li>
                     <li class="header__menu-item">
                         <a class="header__menu-link" href="#work">work</a>
@@ -44,8 +44,8 @@
             <span class="banner__design-kinds animated zoomIn">Frontend Design | UI/UX Design</span>
             <button class="banner__btn animated fadeIn">go ahead</button>
         </section>
-        <div class="container">
-            <article class="about" id="about">
+        <div class="container" id="about">
+            <article class="about">
                 <article class="about__text-container">
                     <h2 class="about__title animated fadeIn">raphael lechner</h2>
                     <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eaque obcaecati reiciendis dolores exercitationem itaque impedit enim nulla animi odit! Quod ducimus autem enim repellendus expedita error molestiae consectetur nam.
@@ -74,8 +74,8 @@
                 </article>
             </article>
         </div>
-        <div class="container">
-            <article class="portfolio" id="work">
+        <div class="container" id="portfolio">
+            <article class="portfolio waypoint" id="work">
                 <div class="portfolio__border-top"></div>
                 <div class="works portfolio__works">
                     <div class="portfolio__work" style="animation-delay: 0.7s;">
@@ -127,8 +127,8 @@
                 </div>
             </article>
         </div>
-        <div class="container">
-            <article class="contact" id="contact">
+        <div class="container" id="contact">
+            <article class="contact waypoint" id="contact">
                 <div class="contact__border-top"></div>
                 <h2 class="contact__title">Get in touch!</h2>
                 <section class="form">
@@ -165,6 +165,7 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app/common_files/scripts/plugin_waypoints_js/jquery.waypoints.min.js"></script>
     <script src="dist/scripts/script.js"></script>
 </body>
 </html>
