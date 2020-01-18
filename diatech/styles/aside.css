@@ -1,1 +1,19 @@
-.aside{-webkit-box-flex:0;flex:0 0 30%;margin-left:2.5%}.aside__lists ul{margin-top:10%}aside ul{font-size:1.1em;text-transform:uppercase;list-style-type:none}aside a{color:#000;text-decoration:none}
+.aside {
+    -webkit-box-flex: 0;
+    flex: 0 0 30%;
+    margin-left: 2.5%;
+  }
+  
+    .aside__lists ul {
+      margin-top: 10%;
+    }
+  
+    aside ul {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      list-style-type: none; }
+    
+    aside a {
+        color: #000;
+        text-decoration: none;
+    }
