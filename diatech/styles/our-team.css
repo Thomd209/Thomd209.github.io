@@ -63,7 +63,6 @@
 
 .about-container__supervisor {
     margin: 0 2.5% 2.5% 30%;
-    padding-bottom: 2.5%;
     text-align: right;
     font-weight: bold;
 }
@@ -71,6 +70,5 @@
 @media all and (min-width:769px) {
     .about-container__supervisor {
         margin: 0 2.5% 2.5% 64%;
-        padding-bottom: 2.5%;
     }
 }
