@@ -53,16 +53,16 @@
     background-color: #D3D3D3
 }
 
+.about-container__paragraph {
+    margin: 2.5% 3%;
+}
+
 .about-container__first-paragraph {
     padding-top: 2.5%;
 }
 
-.about-container__results p {
-    margin: 2.5% 3%;
-}
-
 .about-container__supervisor {
-    margin: 0 2.5% 0 30%;
+    margin: 0 2.5% 2.5% 30%;
     padding-bottom: 2.5%;
     text-align: right;
     font-weight: bold;
@@ -70,7 +70,7 @@
 
 @media all and (min-width:769px) {
     .about-container__supervisor {
-        margin: 0 2.5% 0 64%;
+        margin: 0 2.5% 2.5% 64%;
         padding-bottom: 2.5%;
     }
 }
