@@ -56,18 +56,30 @@
 @media all and (max-width: 768px) {
     .about-container__paragraph {
         margin: 2.5% 0;
-        text-indent: 3%;
     }
 }
 
 @media all and (min-width: 769px) {
     .about-container__paragraph {
-        margin: 2.5% 3%;
+        margin: 2.5% 0;
     }
 }
 
 .about-container__first-paragraph {
     padding-top: 2.5%;
+    text-indent: 3%;
+}
+
+@media all and (max-width: 768px) {
+    .about-container__last-paragraph {
+        text-indent: 3%;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .about-container__last-paragraph {
+        margin-left: 3%;
+    }
 }
 
 .about-container__supervisor {
