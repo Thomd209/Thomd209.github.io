@@ -110,8 +110,9 @@ body {
     .main__visiting-card {
         display: flex;
         flex-direction: column;
-        width: 75%;
+        width: 70%;
         margin: 0 auto;
+        padding: 0 10px;
     }
 }
 
@@ -123,6 +124,7 @@ body {
 @media (max-width: 500px) {
     .visiting-card__title {
         display: block;
+        margin-left: 0;
         text-align: center;
     }
 }
