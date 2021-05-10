@@ -110,7 +110,7 @@ body {
     .main__visiting-card {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 75%;
         margin: 0 auto;
     }
 }
