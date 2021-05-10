@@ -1,0 +1,454 @@
+body {
+    font-family: 'Arial';
+}
+
+.header {
+    box-shadow: 0 0 25px rgb(88, 86, 86);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 97%;
+        margin: 0 auto;
+    }
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__logo-eats {
+    color: rgb(75, 238, 116);
+}
+
+.header__wrapper {
+    flex-basis: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .header__wrapper {
+        margin: 10px;
+    }
+}
+
+.header__btn-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 15px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.header__btn-sign-in span {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .header__basket {
+        display: none;
+    }
+}
+
+.main__content-top {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('../../Uber eats/imgs/restaurant_Pushkin/visiting_card.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+@media (max-width: 500px) {
+    .main__content-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main__visiting-card {
+    margin-left: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .main__visiting-card {
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main__visiting-card {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__visiting-card {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.visiting-card__title {
+    margin-left: 30px;
+    font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+    .visiting-card__title {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.visiting-card__kitchen_name {
+    display: inline-block;
+    margin: 30px 0 30px 30px;
+}
+
+@media (max-width: 500px) {
+    .visiting-card__kitchen_name {
+        margin: 10px auto;
+    }
+}
+
+.visiting-card__btn-time {
+    margin: 0 50px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+    .visiting-card__btn-time {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+
+.main__content-mid {
+    border-bottom: 1px solid #6d6c6c;
+}
+
+@media (max-width: 670px) {
+    .main__content-mid {
+        display: none;
+    }
+}
+
+.main__menu-list {
+    margin-left: 45px;
+}
+
+@media (max-width: 768px) {
+    .main__menu-list {
+        margin-left: -45px;
+    }
+}
+
+.main__menu-list-item {
+    display: inline-block;
+    padding: 15px;
+}
+
+.main__menu-list-link {
+    color: #626262;
+    text-decoration: none;
+}
+
+.main__menu-list-link:hover {
+    color: rgb(75, 238, 116);
+    transition: color 0.5s;
+}
+
+@media (max-width: 650px) {
+    .content-bottom__title-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin: 0 auto;
+        border-bottom: 1px solid #757575;
+        padding-bottom: 10px;
+    }
+}
+
+.content-bottom__title {
+    margin-bottom: 0;
+    margin-left: 100px;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .content-bottom__title {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .content-bottom__title {
+    }
+}
+
+.content-bottom__dishes {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+    .content-bottom__dishes {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .content-bottom__dishes {
+        flex-direction: column;
+    }
+}
+
+.content-bottom__dish {
+    flex: 47%;
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #757575;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .content-bottom__dish:not(:nth-of-type(1)) {
+        margin-top: 0;
+    }
+}
+
+.content-bottom__dish:hover {
+    background-color: #c4bfbf;
+    transition: background-color 0.5s;
+}
+
+.content-bottom__dish:nth-of-type(2n) {
+    flex: 47%;
+    display: flex;
+    margin: 20px 10px;
+}
+
+@media (max-width: 768px) {
+    .content-bottom__dish:nth-of-type(2n) {
+        margin: 20px 0;
+    }
+}
+
+.content-bottom__dish-desc {
+    position: relative;
+    flex: 45%;
+}
+
+.content-bottom__dish-name {
+    display: block;
+    margin: 10px 10px;
+    font-weight: 600;
+}
+
+.content-bottom__dish-desc-additional {
+    display: block;
+    margin: 10px 10px;
+    font-size: 0.9rem;
+    color: #464545;
+}
+
+.content-bottom__dish-price {
+    position: absolute;
+    top: 150px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.content-bottom__dish-img {
+    flex: 40%;
+    height: 200px;
+}
+
+.content-bottom__dish-img-1 {
+    background: url("../../../../../Open_Server/domains/localhost/Uber eats/imgs/restaurant_Pushkin/card-1.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.content-bottom__dish-img-2 {
+    background: url("../../../../../Open_Server/domains/localhost/Uber eats/imgs/restaurant_Pushkin/card-2.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.content-bottom__dish-img-3 {
+    background: url("../../../../../Open_Server/domains/localhost/Uber eats/imgs/restaurant_Pushkin/card-3.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.content-bottom__dish-img-4 {
+    background: url("../../../../../Open_Server/domains/localhost/Uber eats/imgs/restaurant_Pushkin/card-4.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.content-bottom__dish-img-5 {
+    background: url("../../../../../Open_Server/domains/localhost/Uber eats/imgs/restaurant_Pushkin/card-5.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.content-bottom__dish-img-6 {
+    background: url("../../../../../Open_Server/domains/localhost/Uber eats/imgs/restaurant_Pushkin/card-6.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+footer {
+    background-color: #262626;
+}
+
+.footer__content {
+    width: 80%;
+    margin: 0 100px;
+}
+
+@media (max-width: 768px) {
+    .footer__content {
+        margin-left: 10px;
+    }
+}
+
+.footer__content-top-block {
+    padding: 40px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.footer__logo {
+    color: #fff;
+}
+
+.footer__logo-eats {
+    color: rgb(75, 238, 116);
+}
+
+.footer__content-mid-block-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .footer__content-mid-block-top {
+        flex-direction: column;
+    }
+}
+
+.footer__content-mid-block-top > div {
+    flex: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__content-mid-block-top > div:nth-of-type(1) {
+        flex: 10%;
+    }
+}
+
+.footer__content-mid-block-top > div > span {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    .footer__content-mid-block-top > div > span {
+        margin-top: 25px;
+    }
+}
+
+.footer__select-langs {
+    width: 90px;
+    margin-top: 20px;
+}
+
+.footer__hashtag {
+    color: rgb(75, 238, 116);
+}
+
+.footer__social-media {
+    margin-top: 10px;
+}
+
+.footer__content-mid-block-bottom {
+    border-bottom: 1px solid #fff;
+}
+
+.footer__app-stores-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+    margin: 30px auto;
+}
+
+.footer__terms-of-service {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1050px) {
+    .footer__terms-of-service {
+        width: 95%;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer__terms-of-service {
+        flex-direction: column;
+    }
+
+    .footer__terms-of-service > span {
+        margin-top: 20px;
+
+    }
+}
