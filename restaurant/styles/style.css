@@ -117,18 +117,13 @@ body {
 
 .visiting-card__title {
     margin-left: 30px;
-    font-size: 1.5rem;
-}
-
-@media (max-width: 768px) {
-    .visiting-card__title {
-        font-size: 1.8rem;
-    }
+    font-size: 2rem;
 }
 
 @media (max-width: 500px) {
     .visiting-card__title {
         display: block;
+        margin-left: 0;
         text-align: center;
     }
 }
