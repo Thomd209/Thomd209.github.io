@@ -123,6 +123,7 @@ body {
 @media (max-width: 500px) {
     .visiting-card__title {
         display: block;
+        padding: 0 10px;
         text-align: center;
     }
 }
